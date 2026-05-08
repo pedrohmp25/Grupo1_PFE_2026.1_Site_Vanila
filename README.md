@@ -2,7 +2,7 @@
 
 Documento de apoio para auxiliar na criação da primeira versão do site da acbrasil.
 
-> [!Warning]
+> [!IMPORTANT]
 > Corrigir os erros apontados pelo professor Thiago durante a apresentação, sendo eles:
 > * Descrepância do elemento "Artigos Recentes" em relação ao restante da seção;
 > * Corrigir a formatação da frase "Governança Corporativa" na página artigos.
