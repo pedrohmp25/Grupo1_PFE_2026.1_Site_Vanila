@@ -8,16 +8,16 @@
 
 ## Funções dos integrantes
 
-    |Funções        |Responsáveis                    |
-    |---------------|------------------------------- |
-    |Desing         |**Vitor Freira, **Maria Eduarda |
-    |Header         |**Felipe                        |
-    |Main-Home      |**Vitor Luis, **Gabriel, **Pedro|
-    |Main-Artigos   |A definir                       |
-    |Main-Quem Somos|A definir                       |
-    |Main-Contatos  |A definir                       |
-    |Footer         |**Maria Eduarda                 |
-    |JavaScript     |A definir                       |
+|Funções        |Responsáveis                    |
+|---------------|------------------------------- |
+|Desing         |**Vitor Freira, **Maria Eduarda |
+|Header         |**Felipe                        |
+|Main-Home      |**Vitor Luis, **Gabriel, **Pedro|
+|Main-Artigos   |A definir                       |
+|Main-Quem Somos|A definir                       |
+|Main-Contatos  |A definir                       |
+|Footer         |**Maria Eduarda                 |
+|JavaScript     |A definir                       |
     
 
 
