@@ -1,10 +1,10 @@
 # Grupo1_Site_Vanila
 
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 > Corrigir os erros apontados pelo professor Thiago durante a apresentação, sendo eles:
-> -**Descrepância do elemento "Artigos Recentes" em relação ao restante da seção;
-> -**Corrigir a formatação da frase "Governança Corporativa" na página artigos.
+> * Descrepância do elemento "Artigos Recentes" em relação ao restante da seção;git
+> * Corrigir a formatação da frase "Governança Corporativa" na página artigos.
 
 ## Funções dos integrantes
 
