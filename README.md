@@ -17,7 +17,7 @@ Coisas que podem melhorar:
 
 |Funções        |Responsáveis                    |
 |---------------|------------------------------- |
-|Design         |Vitor Freira, Maria Eduarda     |
+|Design         |Vitor Freire, Maria Eduarda     |
 |Header         |Felipe                          |
 |Main-Home      |Vitor Luis, Gabriel, Pedro      |
 |Main-Artigos   |A definir                       |
