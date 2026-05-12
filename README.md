@@ -24,7 +24,6 @@ Coisas que podem melhorar:
 |Main-Quem Somos|A definir                       |
 |Main-Contatos  |A definir                       |
 |Footer         |Maria Eduarda                   |
-|CSS            |A definir                       |   
 |JavaScript     |Vitor Freire                    |
     
 
