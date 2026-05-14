@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACB - Associação de Conselheiros do Brasil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="header-logo">
+                <img src="images/logo.png" alt="ACB logo">
+            </a>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pages/artigos/artigos.html">Artigos</a></li>
+                    <li><a href="pages/quem_somos/quem_somos.html">Quem somos</a></li>
+                    <li><a href="pages/contato/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="header-cta">Associe-se</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ── HERO ── -->
+        <section class="hero">
+            <button class="hero-arrow hero-arrow--prev" aria-label="Slide anterior">&#8249;</button>
+
+            <div class="hero-track">
+                <div class="hero-slide active">
+                    <div class="hero-text">
+                        <span class="hero-eyebrow">Governança Corporativa</span>
+                        <h1>Influenciar e transformar as empresas brasileiras pela <span>governança</span>.</h1>
+                        <div class="hero-actions">
+                            <a href="#" class="btn-primary">Associe-se</a>
+                            <a href="pages/quem_somos/quem_somos.html" class="btn-outline">Conhecer a ACB</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/hero-1.jpg" alt="Governança corporativa">
+                    </div>
+                </div>
+
+                <div class="hero-slide">
+                    <div class="hero-text">
+                        <span class="hero-eyebrow">Liderança</span>
+                        <h1>Construindo líderes preparados para os <span>desafios</span> do mercado atual.</h1>
+                        <div class="hero-actions">
+                            <a href="#" class="btn-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/hero-2.jpg" alt="Liderança">
+                    </div>
+                </div>
+
+                <div class="hero-slide">
+                    <div class="hero-text">
+                        <span class="hero-eyebrow">Conexão</span>
+                        <h1>Conectando conselheiros e empresas para um <span>futuro sustentável</span>.</h1>
+                        <div class="hero-actions">
+                            <a href="#" class="btn-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/hero-3.jpg" alt="Conexão">
+                    </div>
+                </div>
+
+                <div class="hero-slide">
+                    <div class="hero-text">
+                        <span class="hero-eyebrow">Excelência</span>
+                        <h1>Excelência em governança para empresas de <span>todos os segmentos</span>.</h1>
+                        <div class="hero-actions">
+                            <a href="#" class="btn-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/hero-4.jpg" alt="Excelência">
+                    </div>
+                </div>
+
+                <div class="hero-slide">
+                    <div class="hero-text">
+                        <span class="hero-eyebrow">Cultura</span>
+                        <h1>Transformando a cultura organizacional brasileira <span>desde 2009</span>.</h1>
+                        <div class="hero-actions">
+                            <a href="#" class="btn-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/hero-5.jpg" alt="Cultura organizacional">
+                    </div>
+                </div>
+            </div>
+
+            <button class="hero-arrow hero-arrow--next" aria-label="Próximo slide">&#8250;</button>
+
+            <div class="hero-dots">
+                <span class="hero-dot active"></span>
+                <span class="hero-dot"></span>
+                <span class="hero-dot"></span>
+                <span class="hero-dot"></span>
+                <span class="hero-dot"></span>
+            </div>
+        </section>
+
+        <!-- ── ARTIGOS / ASSOCIADOS ── -->
+        <section class="cards-section">
+            <div class="cards-tabs reveal">
+                <button class="tab-btn active" data-tab="artigos">Artigos</button>
+                <button class="tab-btn" data-tab="associados">Associados</button>
+            </div>
+
+            <div class="cards-grid reveal" id="tab-artigos">
+                <div class="card card--label">
+                    <div>
+                        <span class="card-label">Artigos recentes</span>
+                        <h3 class="card-headline">Insights sobre governança e gestão</h3>
+                    </div>
+                    <a href="pages/artigos/artigos.html" class="card-link">Ver mais</a>
+                </div>
+                <div class="card card--photo">
+                    <img src="images/artigo-1.jpg" alt="Artigo 1">
+                    <div class="card-overlay">
+                        <span class="card-tag">Governança</span>
+                        <h3>Artigo 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    </div>
+                </div>
+                <div class="card card--photo">
+                    <img src="images/artigo-2.jpg" alt="Artigo 2">
+                    <div class="card-overlay">
+                        <span class="card-tag">Liderança</span>
+                        <h3>Artigo 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    </div>
+                </div>
+                <div class="card card--photo">
+                    <img src="images/artigo-3.jpg" alt="Artigo 3">
+                    <div class="card-overlay">
+                        <span class="card-tag">Mercado</span>
+                        <h3>Artigo 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-grid hidden" id="tab-associados">
+                <div class="card card--label">
+                    <div>
+                        <span class="card-label">Associados</span>
+                        <h3 class="card-headline">Conselheiros que fazem a diferença</h3>
+                    </div>
+                    <a href="#" class="card-link">Ver mais</a>
+                </div>
+                <div class="card card--photo">
+                    <img src="images/associado-1.jpg" alt="Associado 1">
+                    <div class="card-overlay">
+                        <span class="card-tag">Conselheiro</span>
+                        <h3>Associado 1</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="card card--photo">
+                    <img src="images/associado-2.jpg" alt="Associado 2">
+                    <div class="card-overlay">
+                        <span class="card-tag">Conselheira</span>
+                        <h3>Associado 2</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="card card--photo">
+                    <img src="images/associado-3.jpg" alt="Associado 3">
+                    <div class="card-overlay">
+                        <span class="card-tag">Conselheiro</span>
+                        <h3>Associado 3</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── JORNADA CTA ── -->
+        <section class="jornada">
+            <div class="jornada-content">
+                <div class="jornada-text reveal">
+                    <span class="jornada-eyebrow">Faça parte</span>
+                    <h2>Sua jornada como membro começa aqui</h2>
+                    <p>Fundada em 2022, a Associação de Conselheiros do Brasil – ACB – nasce com intuito de despertar a
+                        consciência sobre a importância da governança, transformando positivamente a realidade das
+                        empresas brasileiras, em especial as PMEs.</p>
+                    <a href="#" class="btn-outline">Associe-se agora</a>
+                </div>
+                <div class="jornada-image reveal">
+                    <img src="images/jornada.jpg" alt="Membros ACB">
+                </div>
+            </div>
+        </section>
+
+        <!-- ── MERCADO & ECONOMIA ── -->
+        <section class="mercado">
+            <div class="mercado-content">
+                <div class="mercado-header reveal">
+                    <div>
+                        <span class="mercado-eyebrow">Indicadores</span>
+                        <h2>Mercado &amp; Economia</h2>
+                        <p class="mercado-sub">Indicadores relevantes para governança corporativa</p>
+                    </div>
+                    <span class="mercado-update">Atualizado: 13/04/2025, 08:00</span>
+                </div>
+
+                <div class="mercado-grid">
+                    <div class="indicadores reveal">
+                        <div class="indicador">
+                            <span class="ind-label">IBOVESPA</span>
+                            <span class="ind-value">134.281</span>
+                            <span class="ind-change positive">▲ +0,83%</span>
+                        </div>
+                        <div class="indicador">
+                            <span class="ind-label">USD/BRL</span>
+                            <span class="ind-value">R$ 5,71</span>
+                            <span class="ind-change negative">▼ -0,22%</span>
+                        </div>
+                        <div class="indicador">
+                            <span class="ind-label">SELIC</span>
+                            <span class="ind-value">13,25%</span>
+                            <span class="ind-change neutral">— 0,4</span>
+                        </div>
+                    </div>
+
+                    <div class="charts reveal">
+                        <div class="chart-box">
+                            <span class="chart-title">Ibovespa — últimos 7 pregões</span>
+                            <svg viewBox="0 0 200 60" class="sparkline sparkline--green" preserveAspectRatio="none">
+                                <defs>
+                                    <linearGradient id="gradGreen" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#16a34a" stop-opacity="0.25" />
+                                        <stop offset="100%" stop-color="#16a34a" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="0,50 30,42 60,38 90,30 120,35 160,20 200,15 200,60 0,60"
+                                    fill="url(#gradGreen)" />
+                                <polyline points="0,50 30,42 60,38 90,30 120,35 160,20 200,15" fill="none"
+                                    stroke="#16a34a" stroke-width="2.5" />
+                            </svg>
+                            <div class="chart-labels">
+                                <span>07/04</span><span>08/04</span><span>09/04</span><span>10/04</span><span>11/04</span><span>14/04</span><span>17/04</span>
+                            </div>
+                        </div>
+                        <div class="chart-box">
+                            <span class="chart-title">Câmbio USD/BRL — 7 dias</span>
+                            <svg viewBox="0 0 200 60" class="sparkline sparkline--red" preserveAspectRatio="none">
+                                <defs>
+                                    <linearGradient id="gradRed" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#dc2626" stop-opacity="0.25" />
+                                        <stop offset="100%" stop-color="#dc2626" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="0,10 30,18 60,22 90,28 120,35 160,42 200,50 200,60 0,60"
+                                    fill="url(#gradRed)" />
+                                <polyline points="0,10 30,18 60,22 90,28 120,35 160,42 200,50" fill="none"
+                                    stroke="#dc2626" stroke-width="2.5" />
+                            </svg>
+                            <div class="chart-labels">
+                                <span>07/04</span><span>08/04</span><span>09/04</span><span>10/04</span><span>11/04</span><span>14/04</span><span>17/04</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── SOBRE O ACB ── -->
+        <section class="sobre">
+            <div class="sobre-content">
+                <div class="reveal">
+                    <span class="sobre-eyebrow">Quem somos</span>
+                    <h2>Sobre o ACB</h2>
+                </div>
+                <div class="sobre-text reveal">
+                    <p>Fundada em 2022, a Associação de Conselheiros do Brasil – ACB – nasce com intuito de despertar a
+                        consciência sobre a importância e a necessidade da adoção da governança, influenciando e
+                        transformando positivamente a realidade das empresas brasileiras, em especial as PMEs.</p>
+                    <p>Aliamos experiência, credibilidade e conhecimento, para orientar e ajudar a construir as melhores
+                        práticas de governança corporativa e otimização de processos.</p>
+                    <p>Acreditamos que disseminar, educar e incluir as PMEs no universo da governança corporativa, é o
+                        caminho para o desenvolvimento e crescimento forte e sustentável do mercado brasileiro.</p>
+                </div>
+            </div>
+            <div class="sobre-cta reveal">
+                <a href="pages/quem_somos/quem_somos.html" class="btn-outline btn-outline--dark">Saber mais</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img class="logo-icon" src="images/logo.png" alt="ACB logo">
+                </div>
+                <p class="brand-description">
+                    Associação de Conselheiros do Brasil —<br>
+                    promovendo excelência em governança corporativa<br>
+                    desde 2009.
+                </p>
+                <div class="social-icons">
+                    <a href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.67H5.67v8.67h2.67zM7 8.5a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zm11.34 9.84v-4.75c0-2.47-1.32-3.62-3.08-3.62-1.42 0-2.06.78-2.42 1.33V9.67H10.17c.04.75 0 8.67 0 8.67h2.67v-4.84c0-.24.02-.48.09-.65.19-.48.63-.97 1.36-.97.96 0 1.35.73 1.35 1.81v4.65h2.7z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 5.8.1 5 .3 4.2.6c-.8.3-1.5.7-2.2 1.4C1.3 2.7.9 3.4.6 4.2c-.3.8-.5 1.6-.5 2.9C0 8.3 0 8.7 0 12s0 3.7.1 4.9c.1 1.3.3 2.1.6 2.9.3.8.7 1.5 1.4 2.2.7.7 1.4 1.1 2.2 1.4.8.3 1.6.5 2.9.6C8.3 24 8.7 24 12 24s3.7 0 4.9-.1c1.3-.1 2.1-.3 2.9-.6.8-.3 1.5-.7 2.2-1.4.7-.7 1.1-1.4 1.4-2.2.3-.8.5-1.6.6-2.9.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.1-.6-2.9-.3-.8-.7-1.5-1.4-2.2C21.3 1.3 20.6.9 19.8.6c-.8-.3-1.6-.5-2.9-.6C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/artigos/artigos.html">Artigos</a></li>
+                    <li><a href="pages/quem_somos/quem_somos.html">Quem somos</a></li>
+                    <li><a href="#">O que fazemos</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="#">Internacionalização</a></li>
+                    <li><a href="#">Cultura organizacional</a></li>
+                    <li><a href="#">Fusões e aquisições</a></li>
+                    <li><a href="#">Logística</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contato</h4>
+                <div class="contact-info">
+                    <p><a class="contact-link" href="mailto:acbrasil@gmail.com">acbrasil@gmail.com</a></p>
+                    <p><a class="contact-link" href="tel:+5521987654321">(21) 98765-4321</a></p>
+                    <p class="location">Rio de Janeiro - RJ</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Associação de Conselheiros do Brasil. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
