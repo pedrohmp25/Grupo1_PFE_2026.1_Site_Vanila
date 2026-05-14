@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato & Associe-se - ACBrasil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../contato/contato.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+
+            <!-- Logo da ACB -->
+            <a href="#" class="header-logo">
+                <img class="logo-icon" src="/images/logo.png" alt="ACB Logo">
+            </a>
+
+            <!-- Nav desktop -->
+            <nav class="header-nav" id="headerNav" aria-label="Navegação principal">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Artigos</a>
+                <a href="#" class="nav-link">Quem somos</a>
+                <a href="#" class="nav-link">Contato</a>
+            </nav>
+
+            <!-- Botão de Associe-se -->
+            <a href="#" class="header-cta">Associe-se</a>
+
+            <!-- Menu hamburguer -->
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="headerNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+            <nav class="mobile-nav" aria-label="Menu mobile">
+                <a href="#" class="mobile-nav-link">Home</a>
+                <a href="#" class="mobile-nav-link">Artigos</a>
+                <a href="#" class="mobile-nav-link">Quem somos</a>
+                <a href="#" class="mobile-nav-link active">Contato</a>
+                <a href="#" class="header-cta mobile-cta">Associe-se</a>
+            </nav>
+        </div>
+
+    </header>
+
+  <!-- =============================================
+       SEÇÃO 1: HERO DE CONTATO
+       ============================================= -->
+  <section class="hero-contact">
+    <div class="container">
+      <span class="section-label">FALE CONOSCO</span>
+      <h1 class="hero-title">Contato</h1>
+      <p class="hero-subtitle">
+        Tem alguma dúvida ou quer saber mais sobre a ACBrasil? Estamos aqui para ajudar.
+      </p>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SEÇÃO 2: FORMULÁRIO DE CONTATO + INFO
+       ============================================= -->
+  <section class="contact-section">
+    <div class="container contact-grid">
+
+      <!-- Coluna esquerda: informações de contato -->
+      <div class="contact-info">
+        <h2 class="contact-info__title">Vamos Conversar?</h2>
+        <p class="contact-info__desc">
+          Preencha o formulário ao lado ou use um dos nossos canais de contato.
+          Nossa equipe responde em até 2 dias úteis.
+        </p>
+
+        <!-- Item: E-mail -->
+        <div class="contact-item">
+          <div class="contact-item__icon">
+            <!-- Ícone envelope -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+          </div>
+          <div>
+            <span class="contact-item__label">E-mail</span>
+            <a href="mailto:contato@acbrasil.org.br" class="contact-item__value">contato@acbrasil.org.br</a>
+          </div>
+        </div>
+
+        <!-- Item: Localização -->
+        <div class="contact-item">
+          <div class="contact-item__icon">
+            <!-- Ícone localização -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <span class="contact-item__label">Localização</span>
+            <span class="contact-item__value">Brasil</span>
+          </div>
+        </div>
+
+        <!-- Item: LinkedIn -->
+        <div class="contact-item">
+          <div class="contact-item__icon">
+            <!-- Ícone LinkedIn -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </div>
+          <div>
+            <span class="contact-item__label">LinkedIn</span>
+            <a href="#" class="contact-item__value">Associação de Conselheiros do Brasil</a>
+          </div>
+        </div>
+
+        <!-- Redes sociais -->
+        <div class="social-block">
+          <p class="social-block__label">Nossas redes sociais</p>
+          <div class="social-icons">
+            <!-- LinkedIn -->
+            <a href="#" class="social-btn social-btn--linkedin" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <!-- YouTube -->
+            <a href="#" class="social-btn social-btn--youtube" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coluna direita: formulário de contato -->
+      <div class="contact-form-card">
+        <h3 class="form-card__title">Envie uma mensagem</h3>
+
+        <div class="form-row">
+          <!-- Nome -->
+          <div class="form-group">
+            <label class="form-label" for="contact-nome">Nome <span class="required">*</span></label>
+            <input type="text" id="contact-nome" class="form-input" placeholder="Seu nome completo" />
+          </div>
+          <!-- E-mail -->
+          <div class="form-group">
+            <label class="form-label" for="contact-email">E-mail <span class="required">*</span></label>
+            <input type="email" id="contact-email" class="form-input" placeholder="seu@email.com" />
+          </div>
+        </div>
+
+        <!-- Assunto -->
+        <div class="form-group">
+          <label class="form-label" for="contact-assunto">Assunto <span class="required">*</span></label>
+          <div class="select-wrapper">
+            <select id="contact-assunto" class="form-select">
+              <option value="" disabled selected>Selecione um assunto</option>
+              <option>Associação</option>
+              <option>Eventos</option>
+              <option>Parcerias</option>
+              <option>Imprensa</option>
+              <option>Outros</option>
+            </select>
+            <!-- Chevron icon -->
+            <svg class="select-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Mensagem -->
+        <div class="form-group">
+          <label class="form-label" for="contact-mensagem">Mensagem <span class="required">*</span></label>
+          <textarea id="contact-mensagem" class="form-textarea" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+        </div>
+
+        <!-- Botão enviar -->
+        <button type="button" class="btn btn--primary btn--full">Enviar mensagem</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       SEÇÃO 3: ASSOCIE-SE — HERO
+       ============================================= -->
+  <section class="associate-hero">
+    <div class="container associate-hero__inner">
+      <span class="section-label section-label--blue">ASSOCIE-SE</span>
+      <h2 class="associate-hero__title">Faça parte da ACBrasil</h2>
+      <p class="associate-hero__subtitle">
+        Junte-se à maior rede de conselheiros do Brasil e tenha acesso a benefícios exclusivos.
+      </p>
+
+      <!-- Cards de benefícios -->
+      <div class="benefits-grid">
+
+        <!-- Capacitação -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <!-- Ícone chapéu graduação -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="benefit-card__title">Capacitação</h4>
+            <p class="benefit-card__desc">Acesso a cursos, workshops e eventos exclusivos para membros.</p>
+          </div>
+        </div>
+
+        <!-- Conteúdo exclusivo -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <!-- Ícone livro -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="benefit-card__title">Conteúdo exclusivo</h4>
+            <p class="benefit-card__desc">Pesquisas, guias e publicações disponíveis apenas para associados.</p>
+          </div>
+        </div>
+
+        <!-- Networking -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <!-- Ícone compartilhar/networking -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="benefit-card__title">Networking</h4>
+            <p class="benefit-card__desc">Acesso à comunidade de conselheiros e eventos de networking.</p>
+          </div>
+        </div>
+
+        <!-- Representação -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <!-- Ícone banco/instituição -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="22" x2="21" y2="22"/>
+              <line x1="6" y1="18" x2="6" y2="11"/>
+              <line x1="10" y1="18" x2="10" y2="11"/>
+              <line x1="14" y1="18" x2="14" y2="11"/>
+              <line x1="18" y1="18" x2="18" y2="11"/>
+              <polygon points="12 2 20 7 4 7"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="benefit-card__title">Representação</h4>
+            <p class="benefit-card__desc">Voz nos fóruns e entidades que discutem governança no Brasil.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SEÇÃO 4: FORMULÁRIO DE ASSOCIAÇÃO
+       ============================================= -->
+  <section class="associate-form-section">
+    <div class="container">
+      <div class="associate-form-card">
+        <h3 class="form-card__title form-card__title--dark">Solicitação de associação</h3>
+
+        <div class="form-row">
+          <!-- Nome completo -->
+          <div class="form-group">
+            <label class="form-label" for="assoc-nome">Nome completo <span class="required">*</span></label>
+            <input type="text" id="assoc-nome" class="form-input" placeholder="Seu nome completo" />
+          </div>
+          <!-- E-mail -->
+          <div class="form-group">
+            <label class="form-label" for="assoc-email">E-mail <span class="required">*</span></label>
+            <input type="email" id="assoc-email" class="form-input" placeholder="seu@email.com" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <!-- Telefone -->
+          <div class="form-group">
+            <label class="form-label" for="assoc-tel">Telefone</label>
+            <input type="tel" id="assoc-tel" class="form-input" placeholder="(11) 99999-9999" />
+          </div>
+          <!-- Empresa -->
+          <div class="form-group">
+            <label class="form-label" for="assoc-empresa">Empresa</label>
+            <input type="text" id="assoc-empresa" class="form-input" placeholder="Nome da empresa" />
+          </div>
+        </div>
+
+        <!-- Cargo atual -->
+        <div class="form-group">
+          <label class="form-label" for="assoc-cargo">Cargo atual <span class="required">*</span></label>
+          <div class="select-wrapper">
+            <select id="assoc-cargo" class="form-select">
+              <option value="" disabled selected>Selecione seu perfil</option>
+              <option>Conselheiro Independente</option>
+              <option>CEO / Presidente</option>
+              <option>Diretor</option>
+              <option>Executivo</option>
+              <option>Outro</option>
+            </select>
+            <svg class="select-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="form-group">
+          <label class="form-label" for="assoc-linkedin">LinkedIn</label>
+          <input type="url" id="assoc-linkedin" class="form-input" placeholder="https://linkedin.com/in/seu-perfil" />
+        </div>
+
+        <!-- Por que deseja se associar -->
+        <div class="form-group">
+          <label class="form-label" for="assoc-motivo">Por que deseja se associar? <span class="required">*</span></label>
+          <textarea id="assoc-motivo" class="form-textarea" rows="5" placeholder="Conte-nos um pouco sobre sua trajetória e motivação..."></textarea>
+        </div>
+
+        <!-- Botão enviar -->
+        <button type="button" class="btn btn--yellow btn--full">Enviar solicitação de associação</button>
+      </div>
+    </div>
+  </section>
+
+    <!-- =============================================
+         SEÇÃO 5: RODAPÉ
+         ============================================= -->
+    <footer class="footer">
+  <div class="footer-content">
+
+    <!-- Brand / Logo Column -->
+    <div class="footer-brand">
+      <div class="logo">
+        <img class="logo-icon" src="/images/logo.png" alt="ACB logo">
+      </div>
+      <p class="brand-description">
+        Associação de Conselheiros do Brasil —<br>
+        promovendo excelência em governança corporativa<br>
+        desde 2009.
+      </p>
+      <div class="social-icons">
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.67H5.67v8.67h2.67zM7 8.5a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zm11.34 9.84v-4.75c0-2.47-1.32-3.62-3.08-3.62-1.42 0-2.06.78-2.42 1.33V9.67H10.17c.04.75 0 8.67 0 8.67h2.67v-4.84c0-.24.02-.48.09-.65.19-.48.63-.97 1.36-.97.96 0 1.35.73 1.35 1.81v4.65h2.7z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 5.8.1 5 .3 4.2.6c-.8.3-1.5.7-2.2 1.4C1.3 2.7.9 3.4.6 4.2c-.3.8-.5 1.6-.5 2.9C0 8.3 0 8.7 0 12s0 3.7.1 4.9c.1 1.3.3 2.1.6 2.9.3.8.7 1.5 1.4 2.2.7.7 1.4 1.1 2.2 1.4.8.3 1.6.5 2.9.6C8.3 24 8.7 24 12 24s3.7 0 4.9-.1c1.3-.1 2.1-.3 2.9-.6.8-.3 1.5-.7 2.2-1.4.7-.7 1.1-1.4 1.4-2.2.3-.8.5-1.6.6-2.9.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.1-.6-2.9-.3-.8-.7-1.5-1.4-2.2C21.3 1.3 20.6.9 19.8.6c-.8-.3-1.6-.5-2.9-.6C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Navegação -->
+    <div class="footer-column">
+      <h4>NAVEGAÇÃO</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Artigos</a></li>
+        <li><a href="#">Quem somos</a></li>
+        <li><a href="#">O que fazemos</a></li>
+      </ul>
+    </div>
+
+    <!-- Serviços -->
+    <div class="footer-column">
+      <h4>SERVIÇOS</h4>
+      <ul>
+        <li><a href="#">Internacionalização</a></li>
+        <li><a href="#">Cultura organizacional</a></li>
+        <li><a href="#">Fusões e aquisições</a></li>
+        <li><a href="#">Logística</a></li>
+      </ul>
+    </div>
+
+    <!-- Contato -->
+    <div class="footer-column">
+      <h4>CONTATO</h4>
+      <div class="contact-info">
+        <p><a class="contact-link" href="mailto:acbrasil@gmail.com">acbrasil@gmail.com</a></p>
+        <p><a class="contact-link" href="tel:+5521987654321">(21) 98765-4321</a></p>
+        <p class="location">Rio de Janeiro - RJ</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Associação de Conselheiros do Brasil. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</body>
+</html>
