@@ -1,0 +1,447 @@
+ /* ─── RESET & BASE ─────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+      --navy:   #19176D;
+      --gold:   #FFCA08;
+      --white:  #ffffff;
+      --light:  #f5f6ff;
+      --text:   #1A1A2E;
+      --muted:  #7a80a0;
+      --border: #e2e5f0;
+      --font-head: 'Sora', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.65;
+      font-size: 15px;
+    }
+
+    /* ─── HEADER / FOOTER PLACEHOLDERS ────────────────────────────────── */
+    #header-placeholder {
+      height: 70px;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: .05em;
+    }
+
+    #footer-placeholder {
+      height: 200px;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,.35);
+      font-size: 13px;
+      letter-spacing: .05em;
+    }
+
+    /* ─── SHARED HELPERS ───────────────────────────────────────────────── */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 32px;
+      width: 100%;
+      text-align: center;
+      
+    }
+
+    .section-label {
+      display: inline-block;
+      font-family: var(--font-head);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: var(--font-head);
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+
+    .section-sub {
+      margin-top: 10px;
+      font-size: 15px;
+      color: var(--muted);
+      max-width: 560px;
+    }
+
+    .gold-bar {
+      display: block;
+      width: 40px;
+      height: 4px;
+      background: var(--gold);
+      border-radius: 2px;
+      margin: 14px 0 0;
+    }
+
+    /* ─── HERO / PAGE TITLE ────────────────────────────────────────────── */
+    .page-hero {
+      background: var(--light);
+      padding: 52px 0 44px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-hero h1 {
+      font-family: var(--font-head);
+      font-size: clamp(32px, 6vw, 52px);
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.1;
+    }
+
+    .page-hero p {
+      margin-top: 12px;
+      font-size: 15px;
+      color: var(--muted);
+      max-width: 520px;
+    }
+
+    /* ─── ABOUT SECTION ────────────────────────────────────────────────── */
+    .about-section {
+      padding: 72px 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+    
+    .about-img {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      border-radius: 6px;
+      background: linear-gradient(160deg, #8f97bb 0%, #c4c9de 100%);
+    }
+
+   
+    .year-badge {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 6px;
+      padding: 12px 18px;
+      z-index: 2;
+    }
+
+    .year-badge strong {
+      display: block;
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .year-badge span {
+      font-size: 10px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.6);
+      margin-top: 3px;
+      display: block;
+    }
+
+    .about-body h2 {
+      font-family: var(--font-head);
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+
+    .about-body p {
+      font-size: 15px;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    .about-body ul {
+      list-style: none;
+      margin-top: 18px;
+    }
+
+    .about-body ul li {
+      position: relative;
+      padding-left: 22px;
+      font-size: 14px;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .about-body ul li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    /* ─── MISSION / VISION / VALUES ────────────────────────────────────── */
+    .badge {
+            display: inline-block;
+            background-color: #E6F0FF;
+            color: #2F6BFF;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 6px 16px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .mission-h2 {
+            color: #161159; /* Azul escuro */
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #555;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto 50px auto;
+            text-align: center;
+        }
+
+        /* --- Cards Layout --- */
+        .cards-wrapper {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #FFFFFF;
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: left;
+            flex: 1;
+            min-width: 300px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            position: relative;
+        }
+
+        /* Cores da borda superior de cada card */
+        .card.missao { border-top: 4px solid #161159; }
+        .card.visao { border-top: 4px solid #3B82F6; }
+        .card.valores { border-top: 4px solid #FBBF24; }
+
+        .icon {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            color: #161159;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #5A5A70;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        /* Estilização específica para a lista de valores */
+        .card.valores p {
+            margin-bottom: 8px;
+        }
+        
+        .card.valores strong {
+            color: #4A4A60;
+            font-weight: 700;
+        }
+
+    /* ── Numbers ──────────────────────────────────────────────── */
+    .numbers-section {
+      background: var(--navy);
+      padding: 64px 0;
+      text-align: center;
+    }
+
+    .numbers-section .label { color: rgba(232,184,0,.85); margin-bottom: 6px; }
+
+    .numbers-section h2 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 48px;
+    }
+
+    .numbers-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .number-item {
+      padding: 0 20px;
+      border-right: 1px solid rgba(255,255,255,.15);
+    }
+
+    .number-item:last-child { border-right: none; }
+
+    .number-item .num {
+      display: block;
+      font-size: 52px;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .number-item .num-label {
+      display: block;
+      font-size: 13px;
+      color: rgba(255,255,255,.55);
+      margin-top: 6px;
+    }
+
+    /* ── What we do ───────────────────────────────────────────── */
+    .what-section {
+      padding: 72px 0;
+    }
+
+    .what-header {
+      margin-bottom: 40px;
+    }
+
+    .what-header h2 {
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    .what-header p {
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 8px;
+      max-width: 500px;
+    }
+
+    .what-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .what-card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px 22px;
+    }
+
+    .what-card .tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .what-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .what-card p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* ── Board ────────────────────────────────────────────────── */
+    .board-section {
+      background: var(--light);
+      padding: 72px 0;
+    }
+
+    .board-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 18px;
+      margin-top: 40px;
+    }
+
+    .board-card {
+      text-align: center;
+    }
+
+    .board-card .avatar {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 6px;
+      background: linear-gradient(145deg, #b0b7d4, #d4d8ea);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+      font-size: 20px;
+      font-weight: 800;
+      color: rgba(30,35,82,.35);
+    }
+
+    .board-card .name {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.35;
+    }
+
+    .board-card .role {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+
+
+    /* ─── RESPONSIVE ────────────────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .mvv-grid { grid-template-columns: 1fr; }
+      .numbers-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+      .number-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,.12); padding-bottom: 24px; }
+      .number-item:last-child { border-bottom: none; }
+      .what-grid { grid-template-columns: 1fr; }
+      .board-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (max-width: 560px) {
+      .container { padding: 0 18px; }
+      .board-grid { grid-template-columns: repeat(2, 1fr); }
+      .numbers-grid { grid-template-columns: 1fr 1fr; }
+    }

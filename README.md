@@ -18,12 +18,12 @@ Coisas que podem melhorar:
 |Funções        |Responsáveis                    |
 |---------------|------------------------------- |
 |Design         |Vitor Freire, Maria Eduarda     |
-|Header         |Maria Eduarda                          |
+|Header         |Maria Eduarda                   |
 |Main-Home      |Vitor Luiz, Gabriel, Pedro      |
 |Main-Artigos   |A definir                       |
-|Main-Quem Somos|A definir                       |
+|Main-Quem Somos|                          |
 |Main-Contatos  |Vitor Luiz                      |
-|Footer         |Daniel                   |
+|Footer         |Daniel                          |
 |JavaScript     |Vitor Freire                    |
     
 
