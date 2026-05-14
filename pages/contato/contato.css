@@ -1,639 +1,557 @@
-/* ==============================================
-   ACBrasil — Página Contato & Associe-se
-   Sem header e footer
-   Responsivo: mobile, tablet e desktop
-   ============================================== */
-
-/* -----------------------------------------------
-   CSS CUSTOM PROPERTIES (Design Tokens)
-   ----------------------------------------------- */
-:root {
-  /* Cores principais */
-  --color-navy:       #19176D;   /* Azul escuro principal */
-  --color-navy-light: #2A2890;   /* Azul escuro variante */
-  --color-blue:       #19176D;   /* Azul de botões/links */
-  --color-blue-cta:   #2579E8;   /* Botão "Enviar mensagem" */
-  --color-yellow:     #FFCA08;   /* Amarelo ACBrasil */
-  --color-yellow-btn: #E6B600;   /* Botão amarelo */
-  --color-bg-light:   #f0f2f8;   /* Fundo cinza-azulado suave */
-  --color-white:      #ffffff;
-  --color-text:       #1A1A2E;   /* Texto principal */
-  --color-text-muted: #64748b;   /* Texto secundário */
-  --color-border:     #e2e8f0;   /* Bordas de inputs */
-  --color-input-bg:   #f8fafc;   /* Fundo de inputs */
-
-  /* Tipografia */
-  --font-heading: 'Sora', sans-serif;
-  --font-body:    'DM Sans', sans-serif;
-
-  /* Espaçamentos */
-  --space-xs:  0.5rem;   /*  8px */
-  --space-sm:  0.75rem;  /* 12px */
-  --space-md:  1rem;     /* 16px */
-  --space-lg:  1.5rem;   /* 24px */
-  --space-xl:  2rem;     /* 32px */
-  --space-2xl: 3rem;     /* 48px */
-  --space-3xl: 4rem;     /* 64px */
-
-  /* Raios de borda */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
-
-  /* Sombras */
-  --shadow-card: 0 4px 24px rgba(13, 27, 75, 0.08);
-  --shadow-form: 0 2px 12px rgba(13, 27, 75, 0.06);
+/* ─── HERO ─── */
+.contato-hero {
+    background:
+        radial-gradient(circle at 90% 50%, rgba(245, 184, 0, 0.08) 0%, transparent 50%),
+        linear-gradient(135deg, #0f0f3d 0%, #1a1a5e 50%, #2a2a85 100%);
+    padding: 72px 80px 88px;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Header e footer são herdados de styles.css */
-
-/* Exemplo contato — só para contextualizar o header */
-.hero-demo {
-  background: linear-gradient(135deg, #1a1a5e 0%, #20206b 50%, #2a2a85 100%);
-  padding: 48px 80px 56px;
-  color: #ffffff;
+.contato-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.06) 1px, transparent 0);
+    background-size: 32px 32px;
+    opacity: 0.5;
+    pointer-events: none;
 }
 
-.hero-label {
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  color: #f5c800;
-  text-transform: uppercase;
-  margin-bottom: 12px;
+.contato-hero-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
 }
 
-.hero-demo h1 {
-  font-size: clamp(32px, 5vw, 48px);
-  font-weight: 800;
-  margin-bottom: 16px;
-  line-height: 1.15;
+.contato-hero-text {
+    max-width: 720px;
 }
 
-.hero-sub {
-  font-size: 15px;
-  color: #c8c8d8;
-  max-width: 520px;
-  line-height: 1.6;
+.contato-hero-text h1 {
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    margin: 14px 0 16px;
 }
 
-/* -----------------------------------------------
-   CONTAINER — largura máxima centrada
-   ----------------------------------------------- */
-.container {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 var(--space-lg);
+.contato-hero-text p {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--ink-200);
+    max-width: 540px;
 }
 
-/* -----------------------------------------------
-   LABEL DE SEÇÃO (ex: "FALE CONOSCO", "ASSOCIE-SE")
-   ----------------------------------------------- */
-.section-label {
-  display: inline-block;
-  font-family: var(--font-heading);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-yellow);
-  margin-bottom: var(--space-sm);
+
+/* ─── CONTATO SECTION ─── */
+.contato-section {
+    background: var(--surface-soft);
+    padding: 56px 80px 24px;
 }
 
-.section-label--blue {
-  color: var(--color-blue);
+.contato-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 32px;
+    align-items: stretch;
 }
 
-/* -----------------------------------------------
-   SEÇÃO 1: HERO CONTATO
-   Fundo azul escuro com texto branco
-   ----------------------------------------------- */
-.hero-contact {
-  background-color: var(--color-navy);
-  padding: var(--space-3xl) 0 var(--space-2xl);
+/* ─── INFO LATERAL ─── */
+.contato-info {
+    background:
+        radial-gradient(circle at 80% 100%, rgba(245, 184, 0, 0.12) 0%, transparent 60%),
+        linear-gradient(135deg, var(--navy-900) 0%, var(--navy-700) 100%);
+    color: #ffffff;
+    padding: 48px 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-.hero-title {
-  font-family: var(--font-heading);
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 700;
-  color: var(--color-white);
-  line-height: 1.15;
-  margin-bottom: var(--space-md);
+.contato-info::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.06) 1px, transparent 0);
+    background-size: 28px 28px;
+    opacity: 0.4;
+    pointer-events: none;
 }
 
-.hero-subtitle {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.75);
-  max-width: 520px;
+.contato-info>* {
+    position: relative;
+    z-index: 1;
 }
 
-/* -----------------------------------------------
-   SEÇÃO 2: FORMULÁRIO DE CONTATO
-   Fundo branco, grid 2 colunas
-   ----------------------------------------------- */
-.contact-section {
-  background-color: var(--color-white);
-  padding: var(--space-3xl) 0;
+.contato-info .card-cat {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 6px 14px;
+    background: var(--gold-500);
+    color: var(--navy-800);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-radius: 999px;
+    box-shadow: 0 8px 20px rgba(245, 184, 0, 0.4);
 }
 
-/* Grid: info (esq) + card do formulário (dir) */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: var(--space-3xl);
-  align-items: start;
+.contato-info h2 {
+    font-size: clamp(26px, 2.8vw, 34px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 16px 0 12px;
 }
 
-/* --- Coluna esquerda: informações --- */
-.contact-info__title {
-  font-family: var(--font-heading);
-  font-size: clamp(1.5rem, 3vw, 1.875rem);
-  font-weight: 700;
-  color: var(--color-navy);
-  margin-bottom: var(--space-md);
-  line-height: 1.25;
+.info-desc {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--ink-200);
+    margin-bottom: 32px;
 }
 
-.contact-info__desc {
-  font-size: 0.9375rem;
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-xl);
-  line-height: 1.65;
+.info-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
 }
 
-/* Item de contato (ícone + texto) */
-.contact-item {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-md);
-  margin-bottom: var(--space-lg);
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
 }
 
-.contact-item__icon {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--color-bg-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-navy);
+.info-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(245, 184, 0, 0.12);
+    color: var(--gold-500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.contact-item__label {
-  display: block;
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-  margin-bottom: 2px;
+.info-icon svg {
+    width: 18px;
+    height: 18px;
 }
 
-.contact-item__value {
-  display: block;
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: var(--color-navy);
-  transition: color 0.2s;
+.info-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink-300);
+    margin-bottom: 2px;
 }
 
-.contact-item__value:hover {
-  color: var(--color-blue);
+.info-value {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s var(--ease);
 }
 
-/* Redes sociais */
-.social-block {
-  margin-top: var(--space-xl);
+a.info-value:hover {
+    color: var(--gold-500);
 }
 
-.social-block__label {
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-sm);
+.info-social {
+    margin-top: auto;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.social-icons {
-  display: flex;
-  gap: var(--space-sm);
+.info-social-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink-300);
+    margin-bottom: 12px;
 }
 
-/* Botão de rede social */
-.social-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-white);
-  transition: opacity 0.2s, transform 0.2s;
+.info-social-icons {
+    display: flex;
+    gap: 10px;
 }
 
-.social-btn:hover {
-  opacity: 0.85;
-  transform: translateY(-2px);
+.info-social-icons a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s var(--ease);
 }
 
-.social-btn--linkedin {
-  background-color: #0a66c2;
+.info-social-icons a:hover {
+    background: var(--gold-500);
+    color: var(--navy-800);
+    transform: translateY(-3px);
+    border-color: var(--gold-500);
 }
 
-.social-btn--youtube {
-  background-color: #ff0000;
+.info-social-icons svg {
+    width: 17px;
+    height: 17px;
+    fill: currentColor;
 }
 
-/* --- Coluna direita: card do formulário --- */
-.contact-form-card {
-  background: var(--color-white);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-xl) var(--space-xl);
-  box-shadow: var(--shadow-card);
+/* ─── FORM CARD ─── */
+.form-card {
+    background: #ffffff;
+    padding: 48px 44px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
 }
 
-.form-card__title {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--color-navy);
-  margin-bottom: var(--space-lg);
+.form-card .card-cat {
+    align-self: flex-start;
+    display: inline-block;
+    padding: 5px 12px;
+    background: var(--surface-muted);
+    color: var(--navy-700);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-radius: 6px;
 }
 
-.form-card__title--dark {
-  color: var(--color-navy);
-  margin-bottom: var(--space-xl);
+.form-card h3 {
+    font-size: clamp(22px, 2.2vw, 28px);
+    font-weight: 800;
+    color: var(--ink-900);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 14px 0 8px;
 }
 
-/* -----------------------------------------------
-   COMPONENTES DE FORMULÁRIO (shared)
-   ----------------------------------------------- */
+.form-card-sub {
+    font-size: 14px;
+    color: var(--ink-500);
+    margin-bottom: 28px;
+}
 
-/* Linha com 2 campos lado a lado */
+/* ─── FORMULÁRIO ─── */
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
 .form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-md);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
 }
 
-/* Grupo label + input */
 .form-group {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
-  margin-bottom: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-/* Label */
-.form-label {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--color-text);
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink-700);
 }
 
-/* Asterisco obrigatório */
 .required {
-  color: var(--color-blue);
+    color: var(--red-500);
+    font-weight: 700;
 }
 
-/* Input de texto */
-.form-input {
-  width: 100%;
-  padding: 10px 14px;
-  font-family: var(--font-body);
-  font-size: 0.9375rem;
-  color: var(--color-text);
-  background-color: var(--color-white);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    color: var(--ink-900);
+    background: var(--surface-soft);
+    border: 1px solid rgba(15, 15, 61, 0.1);
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s var(--ease);
+    resize: vertical;
 }
 
-.form-input::placeholder {
-  color: #a0aec0;
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--ink-300);
 }
 
-.form-input:focus {
-  border-color: var(--color-blue);
-  box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.12);
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    background: #ffffff;
+    border-color: var(--navy-500);
+    box-shadow: 0 0 0 4px rgba(59, 59, 176, 0.12);
 }
 
-/* Select wrapper (para posicionar o chevron) */
-.select-wrapper {
-  position: relative;
+.select-wrap {
+    position: relative;
 }
 
-.form-select {
-  width: 100%;
-  padding: 10px 40px 10px 14px;
-  font-family: var(--font-body);
-  font-size: 0.9375rem;
-  color: var(--color-text);
-  background-color: var(--color-white);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  outline: none;
-  appearance: none;       /* remove seta nativa */
-  cursor: pointer;
-  transition: border-color 0.2s, box-shadow 0.2s;
+.select-wrap select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 44px;
+    cursor: pointer;
 }
 
-.form-select:focus {
-  border-color: var(--color-blue);
-  box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.12);
-}
-
-/* Ícone chevron do select */
 .select-chevron {
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-  color: var(--color-text-muted);
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    color: var(--ink-500);
+    pointer-events: none;
 }
 
-/* Textarea */
-.form-textarea {
-  width: 100%;
-  padding: 10px 14px;
-  font-family: var(--font-body);
-  font-size: 0.9375rem;
-  color: var(--color-text);
-  background-color: var(--color-white);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  outline: none;
-  resize: vertical;
-  min-height: 120px;
-  transition: border-color 0.2s, box-shadow 0.2s;
+.form-submit {
+    margin-top: 8px;
+    padding: 14px 32px;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--navy-700) 0%, var(--navy-800) 100%);
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s var(--ease);
+    box-shadow: 0 10px 26px rgba(15, 15, 61, 0.25);
 }
 
-.form-textarea::placeholder {
-  color: #a0aec0;
+.form-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 32px rgba(15, 15, 61, 0.35);
 }
 
-.form-textarea:focus {
-  border-color: var(--color-blue);
-  box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.12);
+.form-submit--gold {
+    background: linear-gradient(135deg, var(--gold-500) 0%, var(--gold-600) 100%);
+    color: var(--navy-800);
+    box-shadow: 0 10px 26px rgba(245, 184, 0, 0.4);
 }
 
-/* -----------------------------------------------
-   BOTÕES
-   ----------------------------------------------- */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-heading);
-  font-size: 0.9375rem;
-  font-weight: 600;
-  padding: 13px 24px;
-  border: none;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  transition: background-color 0.2s, transform 0.15s, box-shadow 0.2s;
-  letter-spacing: 0.01em;
+.form-submit--gold:hover {
+    box-shadow: 0 16px 32px rgba(245, 184, 0, 0.55);
 }
 
-.btn:hover {
-  transform: translateY(-1px);
+/* ─── ASSOCIE-SE ─── */
+.associe {
+    background: var(--surface-soft);
+    padding: 80px 80px 60px;
 }
 
-.btn:active {
-  transform: translateY(0);
+.associe-content {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-/* Botão azul (contato) */
-.btn--primary {
-  background-color: var(--color-blue-cta);
-  color: var(--color-white);
+.associe-header {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 56px;
 }
 
-.btn--primary:hover {
-  background-color: #1e40af;
-  box-shadow: 0 4px 16px rgba(29, 78, 216, 0.3);
+.associe-eyebrow {
+    color: var(--navy-700) !important;
+    background: rgba(15, 15, 61, 0.06);
+    border-color: transparent;
 }
 
-/* Botão amarelo (associação) */
-.btn--yellow {
-  background-color: var(--color-yellow-btn);
-  color: var(--color-navy);
+.associe-header h2 {
+    font-size: clamp(30px, 3.5vw, 42px);
+    font-weight: 800;
+    color: var(--ink-900);
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    margin: 14px 0 14px;
 }
 
-.btn--yellow:hover {
-  background-color: #d97706;
-  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.35);
+.associe-header p {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--ink-500);
 }
 
-/* Botão largura total */
-.btn--full {
-  width: 100%;
-  margin-top: var(--space-xs);
-}
-
-/* -----------------------------------------------
-   SEÇÃO 3: ASSOCIE-SE — HERO COM BENEFÍCIOS
-   Fundo cinza-azulado claro
-   ----------------------------------------------- */
-.associate-hero {
-  background-color: var(--color-bg-light);
-  padding: var(--space-3xl) 0;
-}
-
-.associate-hero__inner {
-  text-align: center;
-}
-
-.associate-hero__title {
-  font-family: var(--font-heading);
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-weight: 700;
-  color: var(--color-navy);
-  margin-bottom: var(--space-md);
-  line-height: 1.2;
-}
-
-.associate-hero__subtitle {
-  font-size: 1rem;
-  color: var(--color-text-muted);
-  max-width: 560px;
-  margin: 0 auto var(--space-2xl);
-}
-
-/* Grid de benefícios: 4 colunas no desktop */
 .benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-md);
-  text-align: left;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
 }
 
-/* Card de benefício individual */
 .benefit-card {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: var(--space-lg);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-  transition: box-shadow 0.25s, transform 0.25s;
+    background: #ffffff;
+    border-radius: var(--radius-lg);
+    padding: 32px 28px;
+    border: 1px solid rgba(15, 15, 61, 0.05);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .benefit-card:hover {
-  box-shadow: var(--shadow-card);
-  transform: translateY(-3px);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
 }
 
-.benefit-card__icon {
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-sm);
-  background-color: var(--color-bg-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-navy);
-  margin-bottom: var(--space-xs);
-  flex-shrink: 0;
+.benefit-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(245, 184, 0, 0.15) 0%, rgba(245, 184, 0, 0.05) 100%);
+    color: var(--gold-600);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.benefit-card__title {
-  font-family: var(--font-heading);
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: var(--color-navy);
-  line-height: 1.3;
+.benefit-icon svg {
+    width: 24px;
+    height: 24px;
 }
 
-.benefit-card__desc {
-  font-size: 0.8125rem;
-  color: var(--color-text-muted);
-  line-height: 1.55;
+.benefit-card h3 {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--ink-900);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
 }
 
-/* -----------------------------------------------
-   SEÇÃO 4: FORMULÁRIO DE ASSOCIAÇÃO
-   Fundo igual ao hero de benefícios (continuidade visual)
-   ----------------------------------------------- */
-.associate-form-section {
-  background-color: var(--color-bg-light);
-  padding: 0 0 var(--space-3xl);
+.benefit-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-700);
 }
 
-/* Card do formulário de associação */
-.associate-form-card {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-2xl) var(--space-2xl);
-  max-width: 720px;
-  margin: 0 auto;
-  box-shadow: var(--shadow-card);
+/* ─── FORMULÁRIO ASSOCIAÇÃO ─── */
+.associe-form {
+    background: var(--surface-soft);
+    padding: 24px 80px 96px;
 }
 
-/* -----------------------------------------------
-   RESPONSIVO — TABLET (max 900px)
-   ----------------------------------------------- */
-@media (max-width: 900px) {
-
-  /* Grid de contato vira 1 coluna */
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-2xl);
-  }
-
-  /* Benefícios: 2 colunas em tablet */
-  .benefits-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.associe-form-wrap {
+    max-width: 880px;
+    margin: 0 auto;
 }
 
-/* -----------------------------------------------
-   RESPONSIVO — MOBILE (max 600px)
-   ----------------------------------------------- */
-@media (max-width: 600px) {
+.form-card--wide {
+    padding: 56px;
+}
 
-  /* Hero contato: menos espaço */
-  .hero-contact {
-    padding: var(--space-2xl) 0 var(--space-xl);
-  }
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1024px) {
 
-  /* Seções: espaçamento reduzido */
-  .contact-section,
-  .associate-hero,
-  .associate-form-section {
-    padding-top: var(--space-2xl);
-    padding-bottom: var(--space-2xl);
-  }
+    .contato-hero,
+    .contato-section,
+    .associe,
+    .associe-form {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 
-  /* Título hero menor */
-  .hero-title {
-    font-size: 1.75rem;
-  }
+    .contato-grid {
+        grid-template-columns: 1fr;
+    }
 
-  /* Form card: padding menor */
-  .contact-form-card,
-  .associate-form-card {
-    padding: var(--space-lg);
-  }
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-  /* Linha de 2 campos vira coluna única */
-  .form-row {
-    grid-template-columns: 1fr;
-  }
-
-  /* Benefícios: 1 coluna em mobile */
-  .benefits-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* Card de benefício: layout horizontal */
-  .benefit-card {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: var(--space-md);
-  }
-
-  .benefit-card__icon {
-    margin-bottom: 0;
-  }
-
-  /* Título de seção menor */
-  .associate-hero__title {
-    font-size: 1.625rem;
-  }
-
-  .associate-hero__subtitle {
-    font-size: 0.9375rem;
-  }
-
-  /* Container: padding lateral menor em mobile */
-  .container {
-    padding: 0 var(--space-md);
-  }
-
-   .footer-content {
-      grid-template-columns: 1fr;
+    .form-card--wide {
+        padding: 40px 32px;
     }
 }
 
-/* -----------------------------------------------
-   RESPONSIVO — MOBILE PEQUENO (max 400px)
-   ----------------------------------------------- */
-@media (max-width: 400px) {
+@media (max-width: 768px) {
 
-  .form-card__title {
-    font-size: 1.1rem;
-  }
+    .contato-hero,
+    .contato-section,
+    .associe,
+    .associe-form {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 
-  .hero-title {
-    font-size: 1.5rem;
-  }
+    .contato-hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
 
-  .benefit-card {
-    flex-direction: column;
-  }
+    .contato-hero-stat {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .stat-number {
+        font-size: 64px;
+    }
+
+    .contato-info {
+        padding: 36px 28px;
+    }
+
+    .form-card {
+        padding: 36px 28px;
+    }
+
+    .form-card--wide {
+        padding: 32px 24px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .associe-header {
+        margin-bottom: 40px;
+    }
 }
