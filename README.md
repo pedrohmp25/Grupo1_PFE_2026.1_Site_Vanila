@@ -21,7 +21,7 @@ Coisas que podem melhorar:
 |Header         |Maria Eduarda                   |
 |Main-Home      |Vitor Luiz, Gabriel, Pedro      |
 |Main-Artigos   |A definir                       |
-|Main-Quem Somos|                          |
+|Main-Quem Somos|Gabriel                         |
 |Main-Contatos  |Vitor Luiz                      |
 |Footer         |Daniel                          |
 |JavaScript     |Vitor Freire                    |
