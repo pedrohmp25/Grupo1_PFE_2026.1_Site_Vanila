@@ -69,8 +69,9 @@
 
 .qs-about-left {
   background:
-    radial-gradient(circle at 80% 100%, rgba(245, 184, 0, 0.12) 0%, transparent 60%),
-    linear-gradient(135deg, var(--navy-900) 0%, var(--navy-700) 100%);
+    radial-gradient(circle at 80% 100%, rgba(245, 184, 0, 0.18) 0%, transparent 60%),
+    linear-gradient(135deg, rgba(15, 15, 61, 0.88) 0%, rgba(30, 30, 107, 0.85) 100%),
+    url('../../images/event.png') center / cover no-repeat;
   color: #ffffff;
   padding: 56px 48px;
   display: flex;
@@ -81,6 +82,7 @@
   overflow: hidden;
 }
 
+/* dot pattern sutil + textura da imagem peeking through */
 .qs-about-left::before {
   content: "";
   position: absolute;
@@ -88,7 +90,17 @@
   background-image:
     radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.06) 1px, transparent 0);
   background-size: 28px 28px;
-  opacity: 0.4;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* vinheta sutil pra reforçar foco no conteúdo */
+.qs-about-left::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at center, transparent 30%, rgba(15, 15, 61, 0.35) 100%);
   pointer-events: none;
 }
 
@@ -419,9 +431,7 @@
 
 /* ─── O QUE FAZEMOS (light navy) ─── */
 .qs-what {
-  background:
-    radial-gradient(circle at 90% 100%, rgba(245, 184, 0, 0.06) 0%, transparent 50%),
-    linear-gradient(135deg, var(--navy-900) 0%, var(--navy-700) 100%);
+  background: var(--surface-soft);
   color: #ffffff;
   padding: 96px 80px;
   position: relative;
@@ -445,11 +455,18 @@
 }
 
 .qs-what .qs-section-header h2 {
-  color: #ffffff;
+  font-size: clamp(28px, 3.2vw, 40px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin: 14px 0 14px;
+  color: #000;
 }
 
 .qs-what .qs-section-header p {
-  color: var(--ink-200);
+  font-size: 16px;
+  line-height: 1.65;
+  color: #000;
 }
 
 /* ─── FUNDADORES ─── */
