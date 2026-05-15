@@ -100,15 +100,12 @@
 .contato-info .card-cat {
     display: inline-block;
     align-self: flex-start;
-    padding: 6px 14px;
-    background: var(--gold-500);
-    color: var(--navy-800);
-    font-size: 11px;
+    padding: 6px 0;
+    color: var(--gold-500);
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    border-radius: 999px;
-    box-shadow: 0 8px 20px rgba(245, 184, 0, 0.4);
 }
 
 .contato-info h2 {

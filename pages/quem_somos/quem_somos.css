@@ -96,16 +96,14 @@
   align-self: flex-start;
   display: inline-block;
   padding: 8px 18px;
-  background: var(--gold-500);
-  color: var(--navy-800);
-  font-size: 11px;
+  color: var(--gold-500);
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   border-radius: 999px;
   position: relative;
   z-index: 1;
-  box-shadow: 0 8px 20px rgba(245, 184, 0, 0.4);
 }
 
 .year-block {

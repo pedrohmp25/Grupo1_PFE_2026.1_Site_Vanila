@@ -30,6 +30,18 @@
                 </ul>
             </nav>
             <a href="#" class="header-cta">Associe-se</a>
+            <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-drawer">
+            <nav class="mobile-drawer-nav">
+                <a href="../../index.html">Home</a>
+                <a href="artigos.html" class="active">Artigos</a>
+                <a href="../quem_somos/quem_somos.html">Quem somos</a>
+                <a href="../contato/contato.html">Contato</a>
+                <a href="#" class="mobile-drawer-cta">Associe-se</a>
+            </nav>
         </div>
     </header>
 
@@ -44,7 +56,7 @@
                     <p>Conteúdo especializado em governança corporativa produzido por e para conselheiros.</p>
                 </div>
                 <div class="artigos-hero-stat">
-                    <span class="stat-number">34</span>
+                    <span class="stat-number" id="stat-number">—</span>
                     <span class="stat-label">publicações</span>
                 </div>
             </div>
@@ -60,31 +72,26 @@
                     </svg>
                     <input type="text" class="search-input" placeholder="Buscar artigos...">
                 </div>
-                <div class="filter-pills">
-                    <button class="filter-pill active" data-cat="todos">Todos</button>
-                    <button class="filter-pill" data-cat="compliance">Compliance</button>
-                    <button class="filter-pill" data-cat="cultura">Cultura</button>
-                    <button class="filter-pill" data-cat="energia">Energia</button>
-                    <button class="filter-pill" data-cat="diversidade">Diversidade</button>
-                    <button class="filter-pill" data-cat="sucesso">Sucesso</button>
+                <div class="filter-pills" id="filter-pills">
+                    <button class="filter-pill active" data-cat-id="">Todos</button>
                 </div>
             </div>
         </section>
 
         <!-- ── FEATURED ── -->
         <section class="featured">
-            <div class="featured-card reveal">
+            <div class="featured-card reveal" id="featured-card">
                 <div class="featured-left">
                     <span class="featured-tag">Em destaque</span>
-                    <h2>Governança corporativa e a Caverna de Platão</h2>
+                    <h2 data-featured-title>Carregando…</h2>
                 </div>
                 <div class="featured-right">
-                    <span class="card-cat">Governança</span>
-                    <h3>Governança corporativa e a Caverna de Platão</h3>
-                    <p>Acreditamos que disseminar o conhecimento, educar e incluir as PMEs no universo da governança corporativa, é o caminho para o desenvolvimento e crescimento forte e sustentável do mercado brasileiro.</p>
+                    <span class="card-cat" data-featured-cat>—</span>
+                    <h3 data-featured-title>—</h3>
+                    <p data-featured-excerpt>—</p>
                     <div class="featured-meta">
-                        <span class="meta-info">Março 2020 · 12 min de leitura</span>
-                        <a href="#" class="read-link">Ler Artigo →</a>
+                        <span class="meta-info" data-featured-meta>—</span>
+                        <a href="#" class="read-link" target="_blank" rel="noopener" data-featured-link>Ler Artigo →</a>
                     </div>
                 </div>
             </div>
@@ -95,94 +102,11 @@
             <div class="publications-content">
                 <h2 class="section-label">Publicações recentes</h2>
 
-                <div class="publications-grid">
-
-                    <article class="pub-card reveal">
-                        <div class="pub-image">
-                            <img src="../../images/art-1.jpg" alt="O papel do conselheiro independente">
-                            <span class="pub-cat">Governança</span>
-                        </div>
-                        <div class="pub-body">
-                            <span class="pub-meta">Jan 2025 · 8 min de leitura</span>
-                            <h3>O papel do conselheiro independente na governança moderna</h3>
-                            <p>Como a independência dos conselheiros impacta as decisões estratégicas e a transparência das organizações brasileiras.</p>
-                            <a href="#" class="read-link">Ler Artigo →</a>
-                        </div>
-                    </article>
-
-                    <article class="pub-card reveal">
-                        <div class="pub-image">
-                            <img src="../../images/art-2.jpg" alt="ESG na pauta">
-                            <span class="pub-cat">ESG</span>
-                        </div>
-                        <div class="pub-body">
-                            <span class="pub-meta">Fev 2025 · 7 min de leitura</span>
-                            <h3>ESG na pauta do conselho: desafios e oportunidades</h3>
-                            <p>Como integrar critérios ambientais, sociais e de governança nas decisões estratégicas do conselho de administração.</p>
-                            <a href="#" class="read-link">Ler Artigo →</a>
-                        </div>
-                    </article>
-
-                    <article class="pub-card reveal">
-                        <div class="pub-image">
-                            <img src="../../images/art-3.jpg" alt="Compliance e gestão de riscos">
-                            <span class="pub-cat">Compliance</span>
-                        </div>
-                        <div class="pub-body">
-                            <span class="pub-meta">Jan 2025 · 6 min de leitura</span>
-                            <h3>Compliance e gestão de riscos: a visão do conselho</h3>
-                            <p>Entenda como o conselho deve atuar na supervisão de programas de compliance e gestão de riscos corporativos.</p>
-                            <a href="#" class="read-link">Ler Artigo →</a>
-                        </div>
-                    </article>
-
-                    <article class="pub-card reveal">
-                        <div class="pub-image">
-                            <img src="../../images/art-4.jpg" alt="Planejamento estratégico">
-                            <span class="pub-cat">Estratégia</span>
-                        </div>
-                        <div class="pub-body">
-                            <span class="pub-meta">Jan 2025 · 8 min de leitura</span>
-                            <h3>Planejamento estratégico: o papel ativo do conselho</h3>
-                            <p>Como o conselho pode contribuir de forma efetiva para o processo de planejamento estratégico sem invadir a esfera executiva.</p>
-                            <a href="#" class="read-link">Ler Artigo →</a>
-                        </div>
-                    </article>
-
-                    <article class="pub-card reveal">
-                        <div class="pub-image">
-                            <img src="../../images/art-5.jpg" alt="Letramento financeiro">
-                            <span class="pub-cat">Finanças</span>
-                        </div>
-                        <div class="pub-body">
-                            <span class="pub-meta">Dez 2024 · 6 min de leitura</span>
-                            <h3>Letramento financeiro para conselheiros não financistas</h3>
-                            <p>Fundamentos essenciais de análise financeira que todo conselheiro precisa dominar para exercer seu papel com eficácia.</p>
-                            <a href="#" class="read-link">Ler Artigo →</a>
-                        </div>
-                    </article>
-
-                    <article class="pub-card reveal">
-                        <div class="pub-image">
-                            <img src="../../images/art-6.jpg" alt="Avaliação do conselho">
-                            <span class="pub-cat">Governança</span>
-                        </div>
-                        <div class="pub-body">
-                            <span class="pub-meta">Nov 2024 · 5 min de leitura</span>
-                            <h3>Avaliação do conselho: como medir a eficácia coletiva</h3>
-                            <p>Metodologias e boas práticas para avaliar o desempenho do conselho como um órgão coletivo e identificar oportunidades de melhoria.</p>
-                            <a href="#" class="read-link">Ler Artigo →</a>
-                        </div>
-                    </article>
-
+                <div class="publications-grid" id="publications-grid">
+                    <div class="grid-state">Carregando artigos…</div>
                 </div>
 
-                <nav class="pagination">
-                    <button class="page-btn active">1</button>
-                    <button class="page-btn">2</button>
-                    <button class="page-btn">3</button>
-                    <button class="page-btn page-btn--arrow" aria-label="Próxima página">→</button>
-                </nav>
+                <nav class="pagination" id="pagination" aria-label="Paginação"></nav>
             </div>
         </section>
 
