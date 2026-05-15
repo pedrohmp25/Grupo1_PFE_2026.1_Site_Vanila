@@ -145,44 +145,44 @@
                     <h3>Envie sua mensagem</h3>
                     <p class="form-card-sub">Conte-nos como podemos ajudar.</p>
 
-                    <form class="contato-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="contact-nome">Nome <span class="required">*</span></label>
-                                <input type="text" id="contact-nome" placeholder="Seu nome completo" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-email">E-mail <span class="required">*</span></label>
-                                <input type="email" id="contact-email" placeholder="seu@email.com" required>
-                            </div>
-                        </div>
+                    <form class="contato-form" action="mailto:contato@acbrasil.org" method="POST" enctype="text/plain">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="contact-nome">Nome <span class="required">*</span></label>
+            <input type="text" id="contact-nome" name="Nome" placeholder="Seu nome completo" required>
+        </div>
+        <div class="form-group">
+            <label for="contact-email">E-mail <span class="required">*</span></label>
+            <input type="email" id="contact-email" name="Email" placeholder="seu@email.com" required>
+        </div>
+    </div>
 
-                        <div class="form-group">
-                            <label for="contact-assunto">Assunto <span class="required">*</span></label>
-                            <div class="select-wrap">
-                                <select id="contact-assunto" required>
-                                    <option value="" disabled selected>Selecione um assunto</option>
-                                    <option>Associação</option>
-                                    <option>Eventos</option>
-                                    <option>Parcerias</option>
-                                    <option>Imprensa</option>
-                                    <option>Outros</option>
-                                </select>
-                                <svg class="select-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="m6 9 6 6 6-6" />
-                                </svg>
-                            </div>
-                        </div>
+    <div class="form-group">
+        <label for="contact-assunto">Assunto <span class="required">*</span></label>
+        <div class="select-wrap">
+            <select id="contact-assunto" name="Assunto" required>
+                <option value="" disabled selected>Selecione um assunto</option>
+                <option value="Associação">Associação</option>
+                <option value="Eventos">Eventos</option>
+                <option value="Parcerias">Parcerias</option>
+                <option value="Imprensa">Imprensa</option>
+                <option value="Outros">Outros</option>
+            </select>
+            <svg class="select-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6" />
+            </svg>
+        </div>
+    </div>
 
-                        <div class="form-group">
-                            <label for="contact-mensagem">Mensagem <span class="required">*</span></label>
-                            <textarea id="contact-mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."
-                                required></textarea>
-                        </div>
+    <div class="form-group">
+        <label for="contact-mensagem">Mensagem <span class="required">*</span></label>
+        <textarea id="contact-mensagem" name="Mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."
+            required></textarea>
+    </div>
 
-                        <button type="submit" class="form-submit">Enviar mensagem</button>
-                    </form>
+    <button type="submit" class="form-submit">Enviar mensagem</button>
+</form>
                 </div>
 
             </div>
@@ -259,72 +259,70 @@
         </section>
 
         <!-- ── FORMULÁRIO DE ASSOCIAÇÃO ── -->
-        <section id="associe-form">
-            <div class="associe-form-wrap reveal">
-                <div class="form-card form-card--wide">
-                    <span class="card-cat">Solicitação</span>
-                    <h3>Solicitação de associação</h3>
-                    <p class="form-card-sub">Preencha seus dados — entraremos em contato em até 2 dias úteis.</p>
+       <section id="associe-form">
+    <div class="associe-form-wrap reveal">
+        <div class="form-card form-card--wide">
+            <span class="card-cat">Solicitação</span>
+            <h3>Solicitação de associação</h3>
+            <p class="form-card-sub">Preencha seus dados — entraremos em contato em até 2 dias úteis.</p>
 
-                    <form class="contato-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="assoc-nome">Nome completo <span class="required">*</span></label>
-                                <input type="text" id="assoc-nome" placeholder="Seu nome completo" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="assoc-email">E-mail <span class="required">*</span></label>
-                                <input type="email" id="assoc-email" placeholder="seu@email.com" required>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="assoc-tel">Telefone</label>
-                                <input type="tel" id="assoc-tel" placeholder="(11) 99999-9999">
-                            </div>
-                            <div class="form-group">
-                                <label for="assoc-empresa">Empresa</label>
-                                <input type="text" id="assoc-empresa" placeholder="Nome da empresa">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="assoc-cargo">Cargo atual <span class="required">*</span></label>
-                            <div class="select-wrap">
-                                <select id="assoc-cargo" required>
-                                    <option value="" disabled selected>Selecione seu perfil</option>
-                                    <option>Conselheiro Independente</option>
-                                    <option>CEO / Presidente</option>
-                                    <option>Diretor</option>
-                                    <option>Executivo</option>
-                                    <option>Outro</option>
-                                </select>
-                                <svg class="select-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="m6 9 6 6 6-6" />
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="assoc-linkedin">LinkedIn</label>
-                            <input type="url" id="assoc-linkedin" placeholder="https://linkedin.com/in/seu-perfil">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="assoc-motivo">Por que deseja se associar? <span
-                                    class="required">*</span></label>
-                            <textarea id="assoc-motivo" rows="5"
-                                placeholder="Conte-nos um pouco sobre sua trajetória e motivação..."
-                                required></textarea>
-                        </div>
-
-                        <button type="submit" class="form-submit form-submit--gold">Enviar solicitação</button>
-                    </form>
+            <form class="contato-form" action="mailto:contato@acbrasil.org" method="POST" enctype="text/plain">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="assoc-nome">Nome completo <span class="required">*</span></label>
+                        <input type="text" id="assoc-nome" name="Nome" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="assoc-email">E-mail <span class="required">*</span></label>
+                        <input type="email" id="assoc-email" name="Email" placeholder="seu@email.com" required>
+                    </div>
                 </div>
-            </div>
-        </section>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="assoc-tel">Telefone</label>
+                        <input type="tel" oninput="this.value = this.value.replace(/\D/g,'')" id="assoc-tel" name="Telefone" placeholder="(11) 99999-9999">
+                    </div>
+                    <div class="form-group">
+                        <label for="assoc-empresa">Empresa</label>
+                        <input type="text" id="assoc-empresa" name="Empresa" placeholder="Nome da empresa">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="assoc-cargo">Cargo atual <span class="required">*</span></label>
+                    <div class="select-wrap">
+                        <select id="assoc-cargo" name="Cargo" required>
+                            <option value="" disabled selected>Selecione seu perfil</option>
+                            <option value="Conselheiro Independente">Conselheiro Independente</option>
+                            <option value="CEO / Presidente">CEO / Presidente</option>
+                            <option value="Diretor">Diretor</option>
+                            <option value="Executivo">Executivo</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                        <svg class="select-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="assoc-linkedin">LinkedIn</label>
+                    <input type="url" id="assoc-linkedin" name="LinkedIn" placeholder="https://linkedin.com/in/seu-perfil">
+                </div>
+
+                <div class="form-group">
+                    <label for="assoc-motivo">Por que deseja se associar? <span class="required">*</span></label>
+                    <textarea id="assoc-motivo" name="Motivo" rows="5"
+                        placeholder="Conte-nos um pouco sobre sua trajetória e motivação..." required></textarea>
+                </div>
+
+                <button type="submit" class="form-submit form-submit--gold">Enviar solicitação</button>
+            </form>
+        </div>
+    </div>
+</section>
 
     </main>
 
