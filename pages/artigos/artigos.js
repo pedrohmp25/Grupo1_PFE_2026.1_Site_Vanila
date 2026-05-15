@@ -97,7 +97,7 @@ function renderFilterPills(categories) {
 // ─── Featured ───
 async function loadFeatured() {
     try {
-        const res = await fetch(`${API}/posts?per_page=1&_embed`);
+        const res = await fetch(`${API}/posts?per_page=1&_embed=1`);
         const posts = await res.json();
         if (posts.length) {
             state.featuredId = posts[0].id;
@@ -137,6 +137,7 @@ async function loadPosts() {
         page: state.page,
         _embed: '1',
     });
+    // Filtro de categoria (somente se selecionado — "Todos" não aplica filtro)
     if (state.categoryId) params.append('categories', state.categoryId);
     if (state.search) params.append('search', state.search);
     if (state.featuredId && state.page === 1 && !state.search && !state.categoryId) {
