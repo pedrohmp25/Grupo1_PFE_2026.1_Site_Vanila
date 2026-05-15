@@ -1,398 +1,405 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ACB - Quem Somos</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./quem_somos.css" />
-  <link rel="stylesheet" href="../../styles.css" />
-   
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACB - Quem Somos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="quem_somos.css">
 </head>
+
 <body>
 
- 
-    <header class="header">
-        <div class="header-content">
-            <a href="../../index.html" class="header-logo">
-                <img src="../../images/logo.png" alt="ACB logo">
-            </a>
-            <nav class="header-nav">
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../artigos/artigos.html">Artigos</a></li>
-                    <li><a href="../quem_somos/quem_somos.html" class="active">Quem somos</a></li>
-                    <li><a href="../contato/contato.html">Contato</a></li>
-                </ul>
-            </nav>
-            <a href="/pages/contato/contato.html#associe-form" class="header-cta">Associe-se</a>
-        </div>
-    </header>
-
-
-  <!-- ══════════════════════════════════════════════════════════════════ -->
-  <!-- HERO / PAGE TITLE                                                  -->
-  <!-- ══════════════════════════════════════════════════════════════════ -->
-
-
-<section class="hero-about">
-    <div class="container">
-      <span class="section-label">NOSSA HISTÓRIA</span>
-      <h1 class="hero-title">Quem somos</h1>
-      <p class="hero-subtitle">
-        Conheça a Associação que reúne os principais conselheiros do Brasil e promove a excelência em governança corporativa.
-      </p>
+  <header class="header">
+    <div class="header-content">
+      <a href="../../index.html" class="header-logo">
+        <img src="../../images/logo.png" alt="ACB logo">
+      </a>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../artigos/artigos.html">Artigos</a></li>
+          <li><a href="quem_somos.html" class="active">Quem somos</a></li>
+          <li><a href="../contato/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <a href="/pages/contato/contato.html#associe-form" class="header-cta">Associe-se</a>
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </section>
+    <div class="mobile-drawer">
+      <nav class="mobile-drawer-nav">
+        <a href="../../index.html">Home</a>
+        <a href="../artigos/artigos.html">Artigos</a>
+        <a href="quem_somos.html" class="active">Quem somos</a>
+        <a href="../contato/contato.html">Contato</a>
+        <a href="#" class="mobile-drawer-cta">Associe-se</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- ══════════════════════════════════════════════════════════════════ -->
-  <!-- ABOUT – "Mais de 15 anos fortalecendo a governança"               -->
-  <!-- ══════════════════════════════════════════════════════════════════ -->
-  <section class="about-section">
-    <div class="container">
-      <div class="about-grid">
+  <main>
 
-        <!-- Image side -->
-        <div class="about-img">
-          <div class="year-badge">
-            <strong>2009</strong>
-            <span >Ano de Fundação</span>
+    <!-- ── HERO ── -->
+    <section class="qs-hero">
+      <div class="qs-hero-content">
+        <div class="qs-hero-text">
+          <span class="hero-eyebrow">Nossa história</span>
+          <h1>Quem somos</h1>
+          <p>Conheça a Associação que reúne os principais conselheiros do Brasil e promove a excelência em
+            governança corporativa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT (split card) ── -->
+    <section class="qs-about">
+      <div class="qs-about-card reveal">
+        <div class="qs-about-left">
+          <span class="featured-tag"></span>
+          <div class="year-block">
+            <span class="year-big">2009</span>
+            <span class="year-text">Ano de fundação</span>
           </div>
         </div>
-
-        <!-- Text side -->
-        <div class="about-body">
-          <span class="badge">NOSSA HISTÓRIA</span>
-          <h2 class="about-body-h2">Mais de 15 anos fortalecendo a governança no Brasil</h2>
-          <p> Ao longo desses anos, crescemos de forma consistente, reunindo conselheiros de administração, fiscais e consultivos de empresas dos mais variados portes e setores. </p>
-          <p> Hoje somos a principal referência em governança corporativa para conselheiros no país, com uma comunidade ativa, conteúdo especializado e eventos de alto nível. </p>
-          <ul>
+        <div class="qs-about-right">
+          <span class="card-cat">Nossa história</span>
+          <h2>Mais de 15 anos fortalecendo a governança no Brasil</h2>
+          <p>Ao longo desses anos, crescemos de forma consistente, reunindo conselheiros de administração,
+            fiscais e consultivos de empresas dos mais variados portes e setores.</p>
+          <p>Hoje somos a principal referência em governança corporativa para conselheiros no país, com uma
+            comunidade ativa, conteúdo especializado e eventos de alto nível.</p>
+          <ul class="qs-bullets">
             <li>Fundada em 2009 por conselheiros experientes</li>
             <li>Presente em todas as regiões do Brasil</li>
             <li>Mais de 500 membros ativos</li>
-            <li>Parceiros com instituições nacionais e internacionais</li>
+            <li>Parcerias com instituições nacionais e internacionais</li>
           </ul>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- ── MISSÃO / VISÃO / VALORES ── -->
+    <section class="qs-mvv">
+      <div class="qs-section-content">
+        <div class="qs-section-header reveal">
+          <span class="hero-eyebrow qs-eyebrow-light">Identidade</span>
+          <h2>Missão, Visão e Valores</h2>
+          <p>Os pilares que norteiam todas as nossas ações e decisões como associação.</p>
+        </div>
 
-  <!-- ══════════════════════════════════════════════════════════════════ -->
-  <!-- MISSÃO / VISÃO / VALORES                                           -->
-  <!-- ══════════════════════════════════════════════════════════════════ -->
-  <div class="body-mvv">
-  <div class="container">
-        <div class="badge">Identidade</div>
-        <h2 class="mission-h2">Missão, Visão e Valores</h2>
-        <p class="subtitle">
-            Os pilares que norteiam todas as nossas ações e decisões como<br>associação.
-        </p>
-
-        <div class="cards-wrapper">
-            
-            <div class="card missao">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <circle cx="12" cy="12" r="6"></circle>
-                    <circle cx="12" cy="12" r="2"></circle>
-                </svg>
-                <h3>Missão</h3>
-                <p>Reunir, capacitar e representar os conselheiros de administração, fiscais e consultivos do Brasil, promovendo boas práticas de governança corporativa e fortalecendo a cultura de transparência, ética e responsabilidade nas organizações.</p>
+        <div class="qs-cards-grid qs-cards-grid--3">
+          <article class="qs-card reveal">
+            <div class="qs-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="6" />
+                <circle cx="12" cy="12" r="2" />
+              </svg>
             </div>
+            <h3>Missão</h3>
+            <p>Reunir, capacitar e representar os conselheiros de administração, fiscais e consultivos do
+              Brasil, promovendo boas práticas de governança corporativa e fortalecendo a cultura de
+              transparência, ética e responsabilidade nas organizações.</p>
+          </article>
 
-            <div class="card visao">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                </svg>
-                <h3>Visão</h3>
-                <p>Ser reconhecida como a principal referência em governança corporativa para conselheiros no Brasil, influenciando positivamente o ambiente de negócios e contribuindo para o desenvolvimento sustentável das organizações brasileiras.</p>
+          <article class="qs-card reveal">
+            <div class="qs-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
             </div>
+            <h3>Visão</h3>
+            <p>Ser reconhecida como a principal referência em governança corporativa para conselheiros no
+              Brasil, influenciando positivamente o ambiente de negócios e contribuindo para o
+              desenvolvimento sustentável das organizações brasileiras.</p>
+          </article>
 
-            <div class="card valores">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                </svg>
-                <h3>Valores</h3>
-                <p><strong>Ética</strong> nas relações e nas práticas.</p>
-                <p><strong>Transparência</strong> em todas as nossas ações.</p>
-                <p><strong>Colaboração</strong> entre membros e parceiros.</p>
-                <p><strong>Excelência</strong> técnica e profissional.</p>
-                <p><strong>Independência</strong> e imparcialidade.</p>
+          <article class="qs-card reveal">
+            <div class="qs-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
             </div>
-
-        </div>
-    </div>
-  </div>
-
-  <!-- ── ACBrasil em Números ──────────────────────────────────────── -->
-  <section class="numbers-section">
-    <div class="container">
-      <span class="badge-impacto">Impacto</span>
-      <h2>ACBrasil em números</h2>
-
-      <div class="numbers-grid">
-        <div class="number-item">
-          <span class="num">500+</span>
-          <span class="num-label">Membros ativos</span>
-        </div>
-        <div class="number-item">
-          <span class="num">200+</span>
-          <span class="num-label">Eventos realizados</span>
-        </div>
-        <div class="number-item">
-          <span class="num">15+</span>
-          <span class="num-label">Anos de história</span>
-        </div>
-        <div class="number-item">
-          <span class="num">50+</span>
-          <span class="num-label">Membros parceiros</span>
+            <h3>Valores</h3>
+            <ul class="qs-values-list">
+              <li><strong>Ética</strong> nas relações e práticas</li>
+              <li><strong>Transparência</strong> em todas as ações</li>
+              <li><strong>Colaboração</strong> entre membros e parceiros</li>
+              <li><strong>Excelência</strong> técnica e profissional</li>
+              <li><strong>Independência</strong> e imparcialidade</li>
+            </ul>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- ── NÚMEROS ── -->
+    <section class="qs-numbers">
+      <div class="qs-section-content">
+        <div class="qs-section-header reveal">
+          <span class="hero-eyebrow qs-eyebrow-dark">Impacto</span>
+          <h2>ACBrasil em números</h2>
+        </div>
 
-  <!-- ── O que fazemos ────────────────────────────────────────────── -->
-  <section class="what-section">
-    <div class="container">
-
-      <div class="what-header">
-        <span class="badge-atuacao">Atuação</span>
-        <h2>O que fazemos</h2>
-        <p>Conheça as principais frentes de trabalho da ACBrasil em prol da<br>governança corporativa no Brasil.</p>
+        <div class="qs-stats-grid">
+          <div class="qs-stat reveal">
+            <span class="qs-stat-num">500+</span>
+            <span class="qs-stat-label">Membros ativos</span>
+          </div>
+          <div class="qs-stat reveal">
+            <span class="qs-stat-num">200+</span>
+            <span class="qs-stat-label">Eventos realizados</span>
+          </div>
+          <div class="qs-stat reveal">
+            <span class="qs-stat-num">15+</span>
+            <span class="qs-stat-label">Anos de história</span>
+          </div>
+          <div class="qs-stat reveal">
+            <span class="qs-stat-num">50+</span>
+            <span class="qs-stat-label">Parceiros</span>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="what-grid">
-
-        <div class="what-card border-navy">
-          <svg class="what-icon" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-          </svg>
-          <h3>Capacitação e Educação</h3>
-          <p>Organizamos cursos, workshops, webinars e eventos presenciais voltados ao desenvolvimento contínuo dos conselheiros, abordando temas como finanças, ESG, compliance, estratégia e liderança.</p>
+    <!-- ── O QUE FAZEMOS ── -->
+    <section class="qs-what">
+      <div class="qs-section-content">
+        <div class="qs-section-header reveal">
+          <span class="hero-eyebrow qs-eyebrow-light">Atuação</span>
+          <h2>O que fazemos</h2>
+          <p>Conheça as principais frentes de trabalho da ACBrasil em prol da governança corporativa no
+            Brasil.</p>
         </div>
 
-        <div class="what-card border-blue">
-          <svg class="what-icon" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="18" cy="5" r="3"></circle>
-            <circle cx="6" cy="12" r="3"></circle>
-            <circle cx="18" cy="19" r="3"></circle>
-            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-          </svg>
-          <h3>Networking Qualificado</h3>
-          <p>Promovemos encontros, jantares e fóruns que aproximam conselheiros de diferentes setores, criando oportunidades de troca de experiências e formação de conexões estratégicas.</p>
-        </div>
+        <div class="qs-cards-grid qs-cards-grid--4">
+          <article class="qs-card reveal">
+            <div class="qs-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+            </div>
+            <h3>Capacitação e Educação</h3>
+            <p>Cursos, workshops, webinars e eventos presenciais voltados ao desenvolvimento contínuo dos
+              conselheiros — finanças, ESG, compliance, estratégia e liderança.</p>
+          </article>
 
-        <div class="what-card border-yellow">
-          <svg class="what-icon" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-          </svg>
-          <h3>Produção de Conteúdo</h3>
-          <p>Publicamos artigos, pesquisas, guias e relatórios sobre temas relevantes para a prática de conselheiros, disponíveis para todos os membros em nossa plataforma.</p>
-        </div>
+          <article class="qs-card reveal">
+            <div class="qs-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="18" cy="5" r="3" />
+                <circle cx="6" cy="12" r="3" />
+                <circle cx="18" cy="19" r="3" />
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+              </svg>
+            </div>
+            <h3>Networking Qualificado</h3>
+            <p>Encontros, jantares e fóruns que aproximam conselheiros de diferentes setores, criando
+              oportunidades de troca e conexões estratégicas.</p>
+          </article>
 
-        <div class="what-card border-indigo">
-          <svg class="what-icon" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="12 2 2 7 22 7"></polygon>
-            <polyline points="2 17 2 22 22 22 22 17"></polyline>
-            <line x1="6" y1="12" x2="6" y2="17"></line>
-            <line x1="10" y1="12" x2="10" y2="17"></line>
-            <line x1="14" y1="12" x2="14" y2="17"></line>
-            <line x1="18" y1="12" x2="18" y2="17"></line>
-          </svg>
-          <h3>Representação Institucional</h3>
-          <p>Atuamos junto a órgãos reguladores, entidades do mercado e fóruns nacionais e internacionais, representando os interesses dos conselheiros e contribuindo para um ambiente corporativo mais saudável.</p>
-        </div>
+          <article class="qs-card reveal">
+            <div class="qs-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              </svg>
+            </div>
+            <h3>Produção de Conteúdo</h3>
+            <p>Artigos, pesquisas, guias e relatórios sobre temas relevantes para a prática de conselheiros,
+              disponíveis a todos os membros.</p>
+          </article>
 
+          <article class="qs-card reveal">
+            <div class="qs-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polygon points="12 2 2 7 22 7" />
+                <polyline points="2 17 2 22 22 22 22 17" />
+                <line x1="6" y1="12" x2="6" y2="17" />
+                <line x1="10" y1="12" x2="10" y2="17" />
+                <line x1="14" y1="12" x2="14" y2="17" />
+                <line x1="18" y1="12" x2="18" y2="17" />
+              </svg>
+            </div>
+            <h3>Representação Institucional</h3>
+            <p>Atuamos junto a órgãos reguladores e fóruns nacionais e internacionais, representando os
+              interesses dos conselheiros.</p>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- ── FUNDADORES ── -->
+    <section class="qs-founders">
+      <div class="qs-section-content">
+        <div class="qs-section-header reveal">
+          <span class="hero-eyebrow qs-eyebrow-dark">Quem fundou</span>
+          <h2>Conselheiros Fundadores</h2>
+          <p>Conheça os profissionais que acreditaram na ideia e fundaram a ACBrasil.</p>
+        </div>
 
-  <!-- ── Conselheiros Fundadores ──────────────────────────────────── -->
-  <section class="board-section">
-    <div class="container">
-
-      <div class="board-header">
-        <span id="badge-fundadores">Quem Fundou</span>
-        <h2>Conselheiros Fundadores</h2>
-        <p>Conheça os profissionais que acreditaram na ideia e fundaram a<br>ACBrasil.</p>
+        <div class="qs-founders-grid">
+          <article class="qs-founder reveal">
+            <span class="qs-avatar">AR</span>
+            <span class="qs-founder-name">Alexandre Reis</span>
+            <span class="qs-founder-role">Conselheiro Fundador</span>
+          </article>
+          <article class="qs-founder reveal">
+            <span class="qs-avatar">AO</span>
+            <span class="qs-founder-name">Américo Oliveira</span>
+            <span class="qs-founder-role">Conselheiro Fundador</span>
+          </article>
+          <article class="qs-founder reveal">
+            <span class="qs-avatar">AA</span>
+            <span class="qs-founder-name">Antônio Almeida</span>
+            <span class="qs-founder-role">Conselheiro Fundador</span>
+          </article>
+          <article class="qs-founder reveal">
+            <span class="qs-avatar">CE</span>
+            <span class="qs-founder-name">Carlos Alberto Ercolin</span>
+            <span class="qs-founder-role">Conselheiro Fundador</span>
+          </article>
+          <article class="qs-founder reveal">
+            <span class="qs-avatar">CF</span>
+            <span class="qs-founder-name">Claudia Leite Ferreira</span>
+            <span class="qs-founder-role">Conselheira Fundadora</span>
+          </article>
+          <article class="qs-founder reveal">
+            <span class="qs-avatar">GB</span>
+            <span class="qs-founder-name">Gilberto Bueno</span>
+            <span class="qs-founder-role">Conselheiro Fundador</span>
+          </article>
+          <article class="qs-founder reveal">
+            <span class="qs-avatar">HB</span>
+            <span class="qs-founder-name">Henrique Bravo</span>
+            <span class="qs-founder-role">Conselheiro Fundador</span>
+          </article>
+          <article class="qs-founder reveal">
+            <span class="qs-avatar">IM</span>
+            <span class="qs-founder-name">Ítalo Martins</span>
+            <span class="qs-founder-role">Conselheiro Fundador</span>
+          </article>
+          <article class="qs-founder reveal">
+            <span class="qs-avatar">MC</span>
+            <span class="qs-founder-name">Manoel Carnaúba Cortez</span>
+            <span class="qs-founder-role">Conselheiro Fundador</span>
+          </article>
+          <article class="qs-founder reveal">
+            <span class="qs-avatar">PS</span>
+            <span class="qs-founder-name">Paulo Sardinha</span>
+            <span class="qs-founder-role">Conselheiro Fundador</span>
+          </article>
+          <article class="qs-founder reveal">
+            <span class="qs-avatar">RG</span>
+            <span class="qs-founder-name">Ricardo Gentil</span>
+            <span class="qs-founder-role">Conselheiro Fundador</span>
+          </article>
+          <article class="qs-founder reveal">
+            <span class="qs-avatar">RM</span>
+            <span class="qs-founder-name">Roque Martins</span>
+            <span class="qs-founder-role">Conselheiro Fundador</span>
+          </article>
+          <article class="qs-founder reveal">
+            <span class="qs-avatar">SA</span>
+            <span class="qs-founder-name">Sérgio Araujo</span>
+            <span class="qs-founder-role">Conselheiro Fundador</span>
+          </article>
+          <article class="qs-founder reveal">
+            <span class="qs-avatar">TB</span>
+            <span class="qs-founder-name">Telmo Bauler</span>
+            <span class="qs-founder-role">Conselheiro Fundador</span>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="board-grid">
-
-        <div class="board-card">
-          <div class="board-info">
-            <div class="name">Alexandre Reis</div>
-            <div class="role">Conselheiro Fundador</div>
-          </div>
-        </div>
-
-        <div class="board-card">
-          <div class="board-info">
-            <div class="name">Américo Oliveira</div>
-            <div class="role">Conselheiro Fundador</div>
-          </div>
-        </div>
-
-        <div class="board-card">
-          <div class="board-info">
-            <div class="name">Antônio Almeida</div>
-            <div class="role">Conselheiro Fundador</div>
-          </div>
-        </div>
-
-        <div class="board-card">
-          <div class="board-info">
-            <div class="name">Carlos Alberto Ercolin</div>
-            <div class="role">Conselheiro Fundador</div>
-          </div>
-        </div>
-
-        <div class="board-card">
-          <div class="board-info">
-            <div class="name">Claudia Leite Ferreira</div>
-            <div class="role">Conselheira Fundadora</div>
-          </div>
-        </div>
-
-        <div class="board-card">
-          <div class="board-info">
-            <div class="name">Gilberto Bueno</div>
-            <div class="role">Conselheiro Fundador</div>
-          </div>
-        </div>
-
-        <div class="board-card">
-          <div class="board-info">
-            <div class="name">Henrique Bravo</div>
-            <div class="role">Conselheiro Fundador</div>
-          </div>
-        </div>
-
-        <div class="board-card">
-          <div class="board-info">
-            <div class="name">Ítalo Martins</div>
-            <div class="role">Conselheiro Fundador</div>
-          </div>
-        </div>
-
-        <div class="board-card">
-          <div class="board-info">
-            <div class="name">Manoel Carnaúba Cortez</div>
-            <div class="role">Conselheiro Fundador</div>
-          </div>
-        </div>
-
-        <div class="board-card">
-          <div class="board-info">
-            <div class="name">Paulo Sardinha</div>
-            <div class="role">Conselheiro Fundador</div>
-          </div>
-        </div>
-
-        <div class="board-card">
-
-          <div class="board-info">
-            <div class="name">Ricardo Gentil</div>
-            <div class="role">Conselheiro Fundador</div>
-          </div>
-        </div>
-
-        <div class="board-card">
-          <div class="board-info">
-            <div class="name">Roque Martins</div>
-            <div class="role">Conselheiro Fundador</div>
-          </div>
-        </div>
-
-        <div class="board-card">
-          <div class="board-info">
-            <div class="name">Sérgio Araujo</div>
-            <div class="role">Conselheiro Fundador</div>
-          </div>
-        </div>
-
-        <div class="board-card">
-          <div class="board-info">
-            <div class="name">Telmo Bauler</div>
-            <div class="role">Conselheiro Fundador</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
+  </main>
 
   <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <div class="logo">
-                    <img class="logo-icon" src="../../images/logo.png" alt="ACB logo">
-                </div>
-                <p class="brand-description">
-                    Associação de Conselheiros do Brasil —<br>
-                    promovendo excelência em governança corporativa<br>
-                    desde 2009.
-                </p>
-                <div class="social-icons">
-                    <a href="#" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.67H5.67v8.67h2.67zM7 8.5a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zm11.34 9.84v-4.75c0-2.47-1.32-3.62-3.08-3.62-1.42 0-2.06.78-2.42 1.33V9.67H10.17c.04.75 0 8.67 0 8.67h2.67v-4.84c0-.24.02-.48.09-.65.19-.48.63-.97 1.36-.97.96 0 1.35.73 1.35 1.81v4.65h2.7z"/>
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="YouTube">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/>
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 5.8.1 5 .3 4.2.6c-.8.3-1.5.7-2.2 1.4C1.3 2.7.9 3.4.6 4.2c-.3.8-.5 1.6-.5 2.9C0 8.3 0 8.7 0 12s0 3.7.1 4.9c.1 1.3.3 2.1.6 2.9.3.8.7 1.5 1.4 2.2.7.7 1.4 1.1 2.2 1.4.8.3 1.6.5 2.9.6C8.3 24 8.7 24 12 24s3.7 0 4.9-.1c1.3-.1 2.1-.3 2.9-.6.8-.3 1.5-.7 2.2-1.4.7-.7 1.1-1.4 1.4-2.2.3-.8.5-1.6.6-2.9.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.1-.6-2.9-.3-.8-.7-1.5-1.4-2.2C21.3 1.3 20.6.9 19.8.6c-.8-.3-1.6-.5-2.9-.6C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-column">
-                <h3>Navegação</h3>
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../artigos/artigos.html">Artigos</a></li>
-                    <li><a href="../quem_somos/quem_somos.html">Quem somos</a></li>
-                    <li><a href="#">O que fazemos</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Serviços</h3>
-                <ul>
-                    <li><a href="#">Internacionalização</a></li>
-                    <li><a href="#">Cultura organizacional</a></li>
-                    <li><a href="#">Fusões e aquisições</a></li>
-                    <li><a href="#">Logística</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Contato</h3>
-                <div class="contact-info">
-                    <p><a class="contact-link" href="mailto:acbrasil@gmail.com">acbrasil@gmail.com</a></p>
-                    <p><a class="contact-link" href="tel:+5521987654321">(21) 98765-4321</a></p>
-                    <p class="location">Rio de Janeiro - RJ</p>
-                </div>
-            </div>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="logo">
+          <img class="logo-icon" src="../../images/logo.png" alt="ACB logo">
         </div>
-        <div class="footer-bottom">
-            <p>© 2026 Associação de Conselheiros do Brasil. Todos os direitos reservados.</p>
+        <p class="brand-description">
+          Associação de Conselheiros do Brasil —<br>
+          promovendo excelência em governança corporativa<br>
+          desde 2009.
+        </p>
+        <div class="social-icons">
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.67H5.67v8.67h2.67zM7 8.5a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zm11.34 9.84v-4.75c0-2.47-1.32-3.62-3.08-3.62-1.42 0-2.06.78-2.42 1.33V9.67H10.17c.04.75 0 8.67 0 8.67h2.67v-4.84c0-.24.02-.48.09-.65.19-.48.63-.97 1.36-.97.96 0 1.35.73 1.35 1.81v4.65h2.7z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 5.8.1 5 .3 4.2.6c-.8.3-1.5.7-2.2 1.4C1.3 2.7.9 3.4.6 4.2c-.3.8-.5 1.6-.5 2.9C0 8.3 0 8.7 0 12s0 3.7.1 4.9c.1 1.3.3 2.1.6 2.9.3.8.7 1.5 1.4 2.2.7.7 1.4 1.1 2.2 1.4.8.3 1.6.5 2.9.6C8.3 24 8.7 24 12 24s3.7 0 4.9-.1c1.3-.1 2.1-.3 2.9-.6.8-.3 1.5-.7 2.2-1.4.7-.7 1.1-1.4 1.4-2.2.3-.8.5-1.6.6-2.9.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.1-.6-2.9-.3-.8-.7-1.5-1.4-2.2C21.3 1.3 20.6.9 19.8.6c-.8-.3-1.6-.5-2.9-.6C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z" />
+            </svg>
+          </a>
         </div>
-    </footer>
+      </div>
+      <div class="footer-column">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../artigos/artigos.html">Artigos</a></li>
+          <li><a href="quem_somos.html">Quem somos</a></li>
+          <li><a href="#">O que fazemos</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Serviços</h3>
+        <ul>
+          <li><a href="#">Internacionalização</a></li>
+          <li><a href="#">Cultura organizacional</a></li>
+          <li><a href="#">Fusões e aquisições</a></li>
+          <li><a href="#">Logística</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contato</h3>
+        <div class="contact-info">
+          <p><a class="contact-link" href="mailto:acbrasil@gmail.com">acbrasil@gmail.com</a></p>
+          <p><a class="contact-link" href="tel:+5521987654321">(21) 98765-4321</a></p>
+          <p class="location">Rio de Janeiro - RJ</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Associação de Conselheiros do Brasil. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
+  <script src="../../header.js"></script>
+  <script src="quem_somos.js"></script>
 </body>
+
 </html>
