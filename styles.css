@@ -955,13 +955,24 @@ img {
 /* Dot no final do sparkline com pulse sutil */
 .spark-dot {
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
-    transition: cx 0.6s var(--ease), cy 0.6s var(--ease), fill 0.5s var(--ease);
+    transition: cx 0.6s var(--ease),
+                cy 0.6s var(--ease),
+                fill 0.5s var(--ease);
+
     animation: dot-pulse 2.2s ease-in-out infinite;
+
+    transform-box: fill-box;
+    transform-origin: center;
 }
 
 @keyframes dot-pulse {
-    0%, 100% { r: 3.5; }
-    50% { r: 4.5; }
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.28);
+    }
 }
 
 .chart-labels {
