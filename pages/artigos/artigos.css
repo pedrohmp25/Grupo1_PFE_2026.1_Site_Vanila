@@ -15,7 +15,7 @@
     background:
         radial-gradient(circle at 90% 50%, rgba(245, 184, 0, 0.08) 0%, transparent 50%),
         linear-gradient(135deg, #0f0f3d 0%, #1a1a5e 50%, #2a2a85 100%);
-    padding: 72px 80px 88px;
+    padding: 32px 40px 38px;
     position: relative;
     overflow: hidden;
 }
@@ -386,16 +386,20 @@
 
 .pub-image {
     position: relative;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 14 / 10;
     overflow: hidden;
     background: var(--surface-muted);
+    
+    
 }
 
 .pub-image img {
     width: 100%;
     height: 100%;
+    transition: transform 0.8s var(--ease); 
+    object-position: left bottom;
     object-fit: cover;
-    transition: transform 0.8s var(--ease);
+
 }
 
 .pub-card:hover .pub-image img {
@@ -405,7 +409,7 @@
 .pub-cat {
     position: absolute;
     left: 20px;
-    bottom: 16px;
+    top: 16px;
     padding: 6px 14px;
     background: var(--gold-500);
     color: var(--navy-800);

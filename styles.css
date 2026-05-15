@@ -721,22 +721,19 @@ img {
     align-items: center;
     gap: 10px;
     padding: 14px 32px;
-    border: 1.5px solid rgba(255, 255, 255, 0.4);
-    border-radius: 999px;
-    color: #ffffff;
+    background: linear-gradient(135deg, var(--gold-500) 0%, var(--gold-600) 100%);
+    color: var(--navy-800);
     text-decoration: none;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
+    border-radius: 999px;
     transition: all 0.3s var(--ease);
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 28px rgba(245, 184, 0, 0.4);
 }
 
 .btn-outline:hover {
-    background: #ffffff;
-    color: var(--navy-800);
-    border-color: #ffffff;
     transform: translateY(-2px);
+    box-shadow: 0 16px 36px rgba(245, 184, 0, 0.55);
 }
 
 .btn-outline--dark {
@@ -1037,73 +1034,90 @@ img {
 /* #endregion */
 
 /* #region ─── SOBRE O ACB ─── */
+/* #region ─── SOBRE O ACB ─── */
+/* #region ─── SOBRE O ACB ─── */
 .sobre {
-    background: #ffffff;
-    padding: 120px 20px;
+    background: var(--surface-soft); /* Fundo levemente cinza para o card branco destacar */
+    padding: 100px 80px;
     position: relative;
 }
 
-.sobre-content {
-    display: flex;        
-    flex-direction: column; 
-    align-items: center;  
-    text-align: center;   
-    max-width: 900px;       
-    margin: 0 auto 56px;
+.sobre-container {
+    max-width: 800px; /* Largura reduzida para o texto não ficar cansativo de ler */
+    margin: 0 auto;
+    background: #ffffff; /* Fundo branco do card */
+    padding: 64px;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 12px 40px rgba(15, 15, 61, 0.08); /* Sombra elegante */
+    border: 1px solid rgba(15, 15, 61, 0.05);
+    display: flex;
+    flex-direction: column; /* Força o layout em uma única coluna */
+    gap: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.sobre-header {
+    text-align: center; /* Centraliza o cabeçalho */
 }
 
 .sobre-eyebrow {
     display: inline-block;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: var(--navy-700);
-    background: rgba(15, 15, 61, 0.06);
-    padding: 6px 14px;
+    color: var(--navy-800);
+    background: var(--surface-soft);
+    padding: 8px 16px;
     border-radius: 999px;
     text-transform: uppercase;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(15, 15, 61, 0.08);
 }
 
-.sobre-content h2 {
-    font-size: clamp(32px, 4vw, 48px);
+.sobre-header h2 {
+    font-size: clamp(32px, 4vw, 44px);
     font-weight: 800;
     color: var(--ink-900);
     line-height: 1.1;
     letter-spacing: -0.025em;
-    margin-bottom: 30px;   
-    position: relative;    
-    top: 0;
+}
+
+.sobre-body {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.sobre-lead {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--navy-800);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    text-align: center; /* Centraliza o texto de destaque */
 }
 
 .sobre-text {
-    width: 100%;         
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px;
+    background: #f8f9fc; /* Fundo cinza bem sutil na caixa de texto */
+    border-left: 4px solid var(--gold-500); /* Mantém a linha amarela lateral */
+    border-radius: 0 12px 12px 0;
 }
 
 .sobre-text p {
     font-size: 16px;
     line-height: 1.8;
     color: var(--ink-700);
-    margin-bottom: 20px;
-}
-
-.sobre-text p:last-child {
-    margin-bottom: 0;
-}
-
-.sobre-text p:first-child::first-letter {
-    font-size: inherit;
-    font-weight: inherit;
-    color: inherit;
 }
 
 .sobre-cta {
-    text-align: center;
-    max-width: 900px; 
-    margin: 0 auto;
+    margin-top: 16px;
+    text-align: center; /* Centraliza o botão */
 }
-
-/* #endregion */
 
 /* #region ─── FOOTER ─── */
 .footer {
@@ -1263,6 +1277,14 @@ img {
 /* #region ─── RESPONSIVO ─── */
 @media (max-width: 1024px) {
 
+    .sobre-container {
+        grid-template-columns: 1fr; /* Transforma em 1 coluna no tablet */
+        gap: 40px;
+    }
+    .sobre-header {
+        position: static;
+    }
+
     .hero,
     .cards-section,
     .jornada,
@@ -1307,11 +1329,20 @@ img {
 
 @media (max-width: 768px) {
 
+    .sobre {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .sobre-lead {
+        font-size: 18px; /* Reduz um pouco o parágrafo de destaque no celular */
+    }
+   
+
+   
     .hero,
     .cards-section,
     .jornada,
     .mercado,
-    .sobre,
     .footer {
         padding-left: 24px;
         padding-right: 24px;
