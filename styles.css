@@ -1131,10 +1131,12 @@ img {
 
 .social-icons {
     display: flex;
-    gap: 12px;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .social-icons a {
+    text-decoration: none;
     width: 40px;
     height: 40px;
     display: flex;
@@ -1142,8 +1144,9 @@ img {
     justify-content: center;
     color: #ffffff;
     background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
+    font-size: 18px;
     transition: all 0.3s var(--ease);
 }
 
